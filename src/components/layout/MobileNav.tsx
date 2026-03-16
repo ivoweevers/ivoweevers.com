@@ -5,9 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { mainNavItems } from "@/lib/navigation";
-import { cn } from "@/lib/utils";
+import { mobileNavItems } from "@/lib/navigation";
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -30,46 +28,53 @@ export function MobileNav() {
 
   return (
     <div className="lg:hidden">
-      <Button
-        variant="ghost"
-        size="icon"
+      <button
         aria-label={isOpen ? "Close menu" : "Open menu"}
         aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
+        className="p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
       >
-        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-      </Button>
+        <Menu className="h-6 w-7 text-foreground" strokeWidth={2.5} />
+      </button>
 
       {isOpen && (
         <div
-          className="fixed inset-0 top-16 z-50 bg-background/95 backdrop-blur-sm"
+          className="fixed inset-0 z-50"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation"
         >
-          <nav className="flex flex-col gap-2 p-6">
-            {mainNavItems.map((item) => {
-              const isActive =
-                pathname === item.href ||
-                (item.href !== "/" && pathname.startsWith(item.href));
+          {/* Backdrop - tap to close */}
+          <div
+            className="absolute inset-0 bg-black/20"
+            onClick={() => setIsOpen(false)}
+            aria-hidden="true"
+          />
 
-              return (
+          {/* Menu panel */}
+          <div className="relative bg-dark w-full pb-10 pt-14 px-10 animate-in slide-in-from-top duration-200">
+            {/* Close button */}
+            <button
+              onClick={() => setIsOpen(false)}
+              aria-label="Close menu"
+              className="absolute right-8 top-8 p-1 text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              <X className="h-5 w-5" strokeWidth={2.5} />
+            </button>
+
+            <nav className="flex flex-col gap-2" aria-label="Mobile navigation">
+              {mobileNavItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={cn(
-                    "rounded-md px-4 py-3 text-lg font-medium transition-colors",
-                    "hover:bg-accent hover:text-accent-foreground",
-                    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
-                    isActive && "bg-accent text-accent-foreground"
-                  )}
+                  className="text-white font-light text-lg leading-[40px] transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   {item.label}
                 </Link>
-              );
-            })}
-          </nav>
+              ))}
+            </nav>
+          </div>
         </div>
       )}
     </div>

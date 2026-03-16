@@ -1,28 +1,39 @@
-import Link from "next/link";
+import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
 
 export function HeroSection() {
   return (
-    <section className="py-20 md:py-28 lg:py-36">
+    <section className="pt-10 pb-6 md:pt-16 md:pb-10 lg:pt-20 lg:pb-14">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="font-heading text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-            Ivo Weevers
-          </h1>
-          <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-            Author, entrepreneur, and digital product builder. Helping people
-            turn ideas into successful mobile apps.
+          {/* Lead question */}
+          <p className="text-lg md:text-[32px] lg:text-[42px] font-medium leading-snug">
+            When building a mobile app has never been easier...{" "}
+            <br className="hidden md:block" aria-hidden="true" />
+            why do so few become truly successful?
           </p>
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Button render={<Link href="/pocket-winners" />} size="lg">
-              Discover Pocket Winners
-            </Button>
-            <Button render={<Link href="/contact" />} variant="outline" size="lg">
-              Get in Touch
-            </Button>
+
+          {/* Trophy strip */}
+          <div className="my-8 lg:my-10 flex justify-center">
+            <Image
+              src="/images/trophy-strip.png"
+              alt="Row of app trophies — most are greyed out, only one is golden"
+              width={1371}
+              height={156}
+              className="w-full max-w-[264px] md:max-w-[600px] lg:max-w-[900px] h-auto"
+              priority
+            />
           </div>
+
+          {/* Answer line */}
+          <p className="text-2xl md:text-[32px] lg:text-[42px] font-medium leading-snug">
+            My new book &lsquo;
+            <span className="font-bold italic text-accent">
+              Pocket Winners
+            </span>
+            &rsquo; is about that.
+          </p>
         </div>
       </Container>
     </section>

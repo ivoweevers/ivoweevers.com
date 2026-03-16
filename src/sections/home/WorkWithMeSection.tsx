@@ -1,65 +1,43 @@
-import Link from "next/link";
-
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Container } from "@/components/layout/Container";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function WorkWithMeSection() {
   return (
-    <section id="work-with-me" className="py-20 md:py-28">
+    <section id="work-with-me" className="bg-white py-16 md:py-20 lg:py-24">
       <Container>
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-heading text-3xl font-bold tracking-tight md:text-4xl">
-            Work With Me
-          </h2>
-          <p className="mt-4 text-muted-foreground md:text-lg">
-            Whether you&apos;re launching your first app or scaling an existing
-            product, I can help you navigate the journey.
+        <div className="max-w-[1115px]">
+          <SectionHeading>Work with me</SectionHeading>
+
+          <p className="mt-6 lg:mt-8 text-lg lg:text-[26px] font-bold leading-snug">
+            As an early-stage investor and product leader, I love helping
+            companies and founders with their product plans.
           </p>
-        </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <Card>
-            <CardHeader>
-              <CardTitle>Consulting</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                Strategic advice on mobile app development, product-market fit,
-                and go-to-market strategies.
-              </p>
-            </CardContent>
-          </Card>
+          <div className="mt-6 lg:mt-8 text-lg lg:text-[26px] font-light leading-relaxed space-y-4">
+            <p>
+              I invest as a partner of early-stage and Amsterdam-based fund{" "}
+              <span className="font-bold text-accent">
+                Great Stuff Ventures
+              </span>{" "}
+              and we have done so far in over 40 early-stage companies, across
+              many sectors including fintech, medtech, and the latest
+              AI-startups.
+            </p>
+            <p>
+              I have helped various companies an startups with creating
+              differentiating, high-growth products and their road to exit.
+            </p>
+          </div>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Speaking</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                Keynotes and workshops on entrepreneurship, digital products,
-                and the app economy.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Mentoring</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                One-on-one guidance for founders and product teams looking to
-                build winning apps.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="mt-10 text-center">
-          <Button render={<Link href="/contact" />} size="lg">
-            Let&apos;s Talk
-          </Button>
+          <p className="mt-6 lg:mt-8 text-lg lg:text-[26px]">
+            <a
+              href="#contact"
+              className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Contact me
+            </a>{" "}
+            about your plans or questions.
+          </p>
         </div>
       </Container>
     </section>

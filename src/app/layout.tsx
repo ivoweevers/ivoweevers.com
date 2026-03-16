@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Geologica } from "next/font/google";
 import { Toaster } from "sonner";
 
 import { Header } from "@/components/layout/Header";
@@ -9,14 +9,8 @@ import { JsonLdWebSite } from "@/components/seo/JsonLd";
 
 import "./globals.css";
 
-const fontSans = Inter({
+const geologica = Geologica({
   variable: "--font-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const fontHeading = Playfair_Display({
-  variable: "--font-heading",
   subsets: ["latin"],
   display: "swap",
 });
@@ -65,12 +59,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${fontSans.variable} ${fontHeading.variable} min-h-screen font-sans antialiased`}
+        className={`${geologica.variable} min-h-screen font-sans antialiased bg-vanilla text-foreground`}
       >
         <JsonLdWebSite />
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-white"
         >
           Skip to main content
         </a>
