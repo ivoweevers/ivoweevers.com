@@ -25,11 +25,11 @@ export function MeetIvoSection() {
           <div className="mt-10 lg:mt-0 flex-1">
             <SectionHeading>Meet Ivo</SectionHeading>
 
-            <p className="mt-4 lg:mt-6 text-lg lg:text-[26px] font-bold leading-snug">
+            <p className="mt-4 lg:mt-6 text-subheader">
               Product builder, entrepreneur, investor and author
             </p>
 
-            <div className="mt-4 lg:mt-6 text-lg lg:text-[26px] font-light leading-relaxed space-y-4">
+            <div className="mt-4 lg:mt-6 text-paragraph space-y-4">
               <p>
                 Over 25 years, I&apos;ve co-founded and shipped products used by
                 millions of people. I&apos;ve built and sold my own mobile
@@ -46,7 +46,7 @@ export function MeetIvoSection() {
             <div className="mt-8 lg:mt-10">
               <Button
                 render={<Link href="/my-story" />}
-                className="h-[63px] rounded-[10px] bg-accent text-white font-bold text-xl lg:text-[26px] px-8 hover:bg-accent-hover"
+                className="h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
               >
                 Read my full story
               </Button>

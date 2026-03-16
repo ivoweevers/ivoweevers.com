@@ -14,7 +14,7 @@ export function SectionHeading({
   return (
     <Tag
       className={cn(
-        "font-heading text-[28px] lg:text-[45px] uppercase leading-tight",
+        "font-heading section-title uppercase leading-tight",
         className
       )}
     >

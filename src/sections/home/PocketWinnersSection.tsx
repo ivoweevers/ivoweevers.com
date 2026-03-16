@@ -26,11 +26,11 @@ export function PocketWinnersSection() {
           <div className="mt-10 lg:mt-0 flex-1">
             <SectionHeading>Pocket Winners</SectionHeading>
 
-            <p className="mt-4 lg:mt-6 text-lg lg:text-[26px] font-bold leading-snug">
+            <p className="mt-4 lg:mt-6 text-subheader">
               Develop the Winning Mindset for Creating Standout Mobile Apps
             </p>
 
-            <p className="mt-4 lg:mt-6 text-lg lg:text-[26px] font-light leading-relaxed">
+            <p className="mt-4 lg:mt-6 text-paragraph">
               This book reveals how the best app teams think differently through
               a unique &ldquo;Mobile Mindset&rdquo;: A framework of practical
               behaviours spanning five crucial levels: 1) Seeing differently, 2)
@@ -41,10 +41,10 @@ export function PocketWinnersSection() {
 
             {/* Testimonial */}
             <div className="mt-6 lg:mt-8">
-              <p className="text-lg lg:text-[26px] italic leading-snug">
+              <p className="text-paragraph italic">
                 &ldquo;I&apos;ve never read a book like this.&rdquo;
               </p>
-              <p className="text-lg lg:text-[26px] font-bold leading-snug">
+              <p className="text-subheader">
                 -Name, mobile engineering at DeliveryHero and Pearson
               </p>
             </div>
@@ -58,18 +58,18 @@ export function PocketWinnersSection() {
             <div className="mt-6 lg:mt-8 flex flex-col sm:flex-row gap-4">
               <Button
                 render={<Link href="/pocket-winners" />}
-                className="h-[63px] rounded-[10px] bg-accent text-white font-bold text-xl lg:text-[26px] px-8 hover:bg-accent-hover"
+                className="h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
               >
                 Read about the book
               </Button>
 
               <div className="flex flex-col items-center">
                 <Button
-                  className="h-[63px] rounded-[10px] bg-secondary text-white font-bold text-xl lg:text-[22px] px-8 hover:bg-secondary/90 w-full sm:w-auto"
+                  className="h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/5 w-full sm:w-auto"
                 >
                   Pre-register!
                 </Button>
-                <p className="mt-1 text-lg lg:text-[26px] italic text-center">
+                <p className="mt-1 text-sm italic text-center">
                   Discount on launch day
                 </p>
               </div>

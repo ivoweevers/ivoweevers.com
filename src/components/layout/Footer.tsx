@@ -9,7 +9,7 @@ export function Footer() {
     <footer id="contact" className="bg-dark text-white" role="contentinfo">
       <Container className="py-16 lg:py-20">
         {/* Section heading */}
-        <h2 className="font-heading text-[28px] lg:text-[45px] uppercase">
+        <h2 className="font-heading section-title uppercase">
           <span className="text-accent">/</span> Contact me
         </h2>
 
@@ -29,7 +29,7 @@ export function Footer() {
                 className="shrink-0"
                 aria-hidden="true"
               />
-              <span className="text-accent font-bold text-lg lg:text-[26px] group-hover:underline">
+              <span className="text-accent font-bold text-paragraph group-hover:underline">
                 ivo@ivoweevers.com
               </span>
             </a>
@@ -49,13 +49,13 @@ export function Footer() {
                 className="shrink-0"
                 aria-hidden="true"
               />
-              <span className="text-accent font-bold text-lg lg:text-[26px] group-hover:underline">
+              <span className="text-accent font-bold text-paragraph group-hover:underline">
                 Linkedin page
               </span>
             </a>
 
             {/* Bio blurb */}
-            <p className="font-light text-lg lg:text-[26px] leading-relaxed max-w-[752px] text-white/90 mt-8 lg:mt-12">
+            <p className="text-paragraph text-white/90 max-w-[752px] mt-8 lg:mt-12">
               I split my time between London, Amsterdam and Cagliari (capital of
               the Italian island Sardinia) - combining work at technology&apos;s
               edge with a Mediterranean lifestyle. I tend to be in the place
@@ -72,7 +72,7 @@ export function Footer() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-light text-lg lg:text-[26px] leading-[40px] text-white transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                className="text-nav-item leading-[40px] text-white transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
                 {item.label}
               </Link>
@@ -81,9 +81,13 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <p className="mt-12 lg:mt-16 text-xs lg:text-[20px] font-light text-white/70">
+        <p className="mt-12 lg:mt-16 text-xs lg:text-sm font-light text-white/70">
           &copy; {new Date().getFullYear()} Copyright Ivo Weevers. All rights
           reserved.
+        </p>
+        <p className="mt-1 text-xs lg:text-sm font-light text-white/70">
+          This website is AA accessible and has been designed and built with
+          Figma, Cursor, Github and Vercel.
         </p>
       </Container>
     </footer>

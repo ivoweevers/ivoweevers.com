@@ -8,12 +8,12 @@ export function WorkWithMeSection() {
         <div className="max-w-[1115px]">
           <SectionHeading>Work with me</SectionHeading>
 
-          <p className="mt-6 lg:mt-8 text-lg lg:text-[26px] font-bold leading-snug">
+          <p className="mt-6 lg:mt-8 text-subheader">
             As an early-stage investor and product leader, I love helping
             companies and founders with their product plans.
           </p>
 
-          <div className="mt-6 lg:mt-8 text-lg lg:text-[26px] font-light leading-relaxed space-y-4">
+          <div className="mt-6 lg:mt-8 text-paragraph space-y-4">
             <p>
               I invest as a partner of early-stage and Amsterdam-based fund{" "}
               <span className="font-bold text-accent">
@@ -29,14 +29,14 @@ export function WorkWithMeSection() {
             </p>
           </div>
 
-          <p className="mt-6 lg:mt-8 text-lg lg:text-[26px]">
+          <p className="mt-6 lg:mt-8 text-paragraph">
+            If you are building a product or company, please{" "}
             <a
               href="#contact"
               className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
-              Contact me
-            </a>{" "}
-            about your plans or questions.
+              reach out
+            </a>
           </p>
         </div>
       </Container>

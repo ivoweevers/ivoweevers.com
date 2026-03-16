@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section className="pt-10 pb-6 md:pt-16 md:pb-10 lg:pt-20 lg:pb-14">
       <Container>
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-4xl text-center">
           {/* Lead question */}
           <p className="text-lg md:text-[32px] lg:text-[42px] font-medium leading-snug">
             When building a mobile app has never been easier...{" "}
@@ -21,7 +21,7 @@ export function HeroSection() {
               alt="Row of app trophies — most are greyed out, only one is golden"
               width={1371}
               height={156}
-              className="w-full max-w-[264px] md:max-w-[600px] lg:max-w-[900px] h-auto"
+              className="w-full max-w-[320px] md:max-w-[600px] lg:max-w-[900px] h-auto"
               priority
             />
           </div>

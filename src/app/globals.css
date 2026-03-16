@@ -107,3 +107,24 @@
     @apply font-sans scroll-smooth;
   }
 }
+
+@layer components {
+  .text-paragraph {
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
+    line-height: 1.625;
+  }
+  .text-subheader {
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
+    line-height: 1.625;
+    font-weight: 700;
+  }
+  .section-title {
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .text-nav-item {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}
