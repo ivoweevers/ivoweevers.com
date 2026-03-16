@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ivoweevers.com
+
+Personal website for Ivo Weevers — author, entrepreneur, and digital product builder.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Components**: shadcn/ui
+- **Forms**: React Hook Form + Zod validation
+- **Email**: Resend
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20+
+- npm 10+
+
+### Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/ivoweevers/ivoweevers.com.git
+cd ivoweevers.com
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Create your environment file:
+
+```bash
+cp .env.local.example .env.local
+```
+
+4. Add your API keys to `.env.local`:
+   - `RESEND_API_KEY` — get one at [resend.com](https://resend.com)
+   - `RESEND_FROM_EMAIL` — your verified sender email
+   - `CONTACT_EMAIL` — where contact form submissions are delivered
+
+5. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+  app/                          # Next.js App Router pages
+    api/                        # API routes (newsletter, contact)
+    articles/                   # Article listing and [slug] pages
+    contact/                    # Contact page
+    my-story/                   # Biography page
+    pocket-winners/             # Book page
+    readers/bonus-chapter/      # Unlisted bonus content
+  components/
+    ui/                         # shadcn/ui components
+    layout/                     # Header, Footer, Container, MobileNav
+    forms/                      # NewsletterForm, ContactForm
+    seo/                        # JSON-LD structured data components
+  sections/                     # Page-level section blocks
+    home/                       # HeroSection, WorkWithMeSection, etc.
+  lib/                          # Utilities, validation, config
+  types/                        # Shared TypeScript types
+```
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment on Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push the repository to GitHub.
+2. Go to [vercel.com](https://vercel.com) and import the repository.
+3. Add the environment variables (`RESEND_API_KEY`, `RESEND_FROM_EMAIL`, `CONTACT_EMAIL`) in the Vercel project settings.
+4. Deploy. Vercel auto-detects Next.js and configures the build.
 
-## Deploy on Vercel
+Every push to `main` triggers an automatic deployment.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## SEO & Structured Data
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Per-page metadata via Next.js Metadata API
+- JSON-LD schemas: Person, Book, Article, WebSite, BreadcrumbList
+- Auto-generated `sitemap.xml` and `robots.txt`
+- `/llms.txt` endpoint for LLM crawlers
+- Semantic HTML throughout
+
+## i18n (Prepared)
+
+The site is prepared for future translations. See `src/lib/i18n.ts` for the migration guide. English content lives at the root URL; future locales will be served at `/{locale}/` (e.g., `/it/` for Italian).
+
+## Accessibility
+
+- WCAG AA target
+- Skip-to-content link
+- Focus-visible outlines on all interactive elements
+- ARIA labels on navigation, forms, and icon-only buttons
+- Keyboard-navigable mobile menu
+- Form error announcements via aria attributes
