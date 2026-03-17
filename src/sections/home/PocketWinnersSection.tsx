@@ -31,21 +31,23 @@ export function PocketWinnersSection() {
             </p>
 
             <p className="mt-4 lg:mt-6 text-paragraph">
-              This book reveals how the best app teams think differently through
-              a unique &ldquo;Mobile Mindset&rdquo;: A framework of practical
-              behaviours spanning five crucial levels: 1) Seeing differently, 2)
-              Proving promises fast, 3) Obsessing about the funnel, 4)
-              Treasuring each detail, and 5) Navigating a non-mobile
-              organisation.
+              This book reveals how the most successful app teams think
+              differently through a unique &ldquo;Mobile Mindset&rdquo;: A
+              framework of practical behaviours spanning five crucial levels: 1)
+              Seeing differently, 2) Proving promises fast, 3) Obsessing about
+              the funnel, 4) Treasuring each detail, and 5) Navigating a
+              non-mobile organisation.
             </p>
 
             {/* Testimonial */}
             <div className="mt-6 lg:mt-8">
               <p className="text-paragraph italic">
-                &ldquo;I&apos;ve never read a book like this.&rdquo;
+                &ldquo;The most practical guide to building apps that actually
+                succeed.&rdquo;
               </p>
-              <p className="text-subheader">
-                -Name, mobile engineering at DeliveryHero and Pearson
+              <p className="text-paragraph">
+                Tushar Nallan, Director of Mobile Engineering at Pearson and
+                formerly DeliveryHero
               </p>
             </div>
 
@@ -55,17 +57,17 @@ export function PocketWinnersSection() {
             </p>
 
             {/* CTA buttons */}
-            <div className="mt-6 lg:mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-6 lg:mt-8 flex flex-wrap gap-4 items-start">
               <Button
                 render={<Link href="/pocket-winners" />}
-                className="h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
+                className="inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
               >
                 Read about the book
               </Button>
 
-              <div className="flex flex-col items-center">
+              <div className="inline-flex flex-col items-center">
                 <Button
-                  className="h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/5 w-full sm:w-auto"
+                  className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/5"
                 >
                   Pre-register!
                 </Button>

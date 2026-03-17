@@ -8,10 +8,9 @@ export function HeroSection() {
       <Container>
         <div className="mx-auto max-w-4xl text-center">
           {/* Lead question */}
-          <p className="text-lg md:text-[32px] lg:text-[42px] font-medium leading-snug">
-            When building a mobile app has never been easier...{" "}
-            <br className="hidden md:block" aria-hidden="true" />
-            why do so few become truly successful?
+          <p className="text-lg md:text-2xl lg:text-3xl font-medium leading-snug">
+            When building a mobile app has never been easier... why do so few
+            become truly successful?
           </p>
 
           {/* Trophy strip */}
@@ -27,7 +26,7 @@ export function HeroSection() {
           </div>
 
           {/* Answer line */}
-          <p className="text-2xl md:text-[32px] lg:text-[42px] font-medium leading-snug">
+          <p className="text-lg md:text-2xl lg:text-3xl font-medium leading-snug">
             My new book &lsquo;
             <span className="font-bold italic text-accent">
               Pocket Winners

@@ -15,7 +15,7 @@ export function Footer() {
 
         <div className="mt-10 lg:mt-14 grid gap-12 lg:grid-cols-[1fr_auto]">
           {/* Left column: contact info */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-nav-item">
             {/* Email */}
             <a
               href="mailto:ivo@ivoweevers.com"
@@ -24,12 +24,12 @@ export function Footer() {
               <Image
                 src="/images/icon-email.png"
                 alt=""
-                width={52}
-                height={52}
+                width={48}
+                height={48}
                 className="shrink-0"
                 aria-hidden="true"
               />
-              <span className="text-accent font-bold text-paragraph group-hover:underline">
+              <span className="text-accent font-bold group-hover:underline">
                 ivo@ivoweevers.com
               </span>
             </a>
@@ -44,18 +44,18 @@ export function Footer() {
               <Image
                 src="/images/icon-linkedin.png"
                 alt=""
-                width={59}
-                height={59}
+                width={48}
+                height={48}
                 className="shrink-0"
                 aria-hidden="true"
               />
-              <span className="text-accent font-bold text-paragraph group-hover:underline">
+              <span className="text-accent font-bold group-hover:underline">
                 Linkedin page
               </span>
             </a>
 
             {/* Bio blurb */}
-            <p className="text-paragraph text-white/90 max-w-[752px] mt-8 lg:mt-12">
+            <p className="text-nav-item text-white/90 max-w-[752px] mt-8 lg:mt-12">
               I split my time between London, Amsterdam and Cagliari (capital of
               the Italian island Sardinia) - combining work at technology&apos;s
               edge with a Mediterranean lifestyle. I tend to be in the place
