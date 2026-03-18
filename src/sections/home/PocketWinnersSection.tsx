@@ -39,20 +39,20 @@ export function PocketWinnersSection() {
               non-mobile organisation.
             </p>
 
-            {/* Testimonial */}
-            <div className="mt-6 lg:mt-8">
+            {/* Testimonial (framed quote) */}
+            <div className="mt-6 lg:mt-8 rounded-xl border border-border bg-card/70 p-6 text-center">
               <p className="text-paragraph italic">
                 &ldquo;The most practical guide to building apps that actually
                 succeed.&rdquo;
               </p>
-              <p className="text-paragraph">
+              <p className="mt-2 text-paragraph">
                 Tushar Nallan, Director of Mobile Engineering at Pearson and
                 formerly DeliveryHero
               </p>
             </div>
 
             {/* Coming out date */}
-            <p className="mt-6 lg:mt-8 text-[32px] lg:text-[44px] font-bold leading-tight">
+            <p className="mt-6 lg:mt-8 text-[18px] lg:text-[22px] font-bold leading-tight">
               COMING OUT: APRIL 2026
             </p>
 
@@ -72,7 +72,7 @@ export function PocketWinnersSection() {
                   Pre-register!
                 </Button>
                 <p className="mt-1 text-sm italic text-center">
-                  Discount on launch day
+                  50% discount on launch day
                 </p>
               </div>
             </div>

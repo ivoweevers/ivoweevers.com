@@ -15,22 +15,23 @@ export function WorkWithMeSection() {
 
           <div className="mt-6 lg:mt-8 text-paragraph space-y-4">
             <p>
-              I invest as a partner of early-stage and Amsterdam-based fund{" "}
+              I invest in early-stage tech companies as a partner of
+              Amsterdam-based fund{" "}
               <a
                 href="https://greatstuffventures.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
-                Great Stuff Ventures
+                Investors in the daring builders of tomorrow
               </a>{" "}
-              and we have done so far in over 40 early-stage companies, across
-              many sectors including fintech, medtech, and the latest
+              and we have done so far in over 40 early-stage companies,
+              across exciting sectors including fintech, medtech, and the latest
               AI-startups.
             </p>
             <p>
-              I have helped various companies an startups with creating
-              differentiating, high-growth products and their road to exit.
+              I have helped enterprises, startups and founders with creating
+              unique products and roads to exit.
             </p>
           </div>
 
@@ -49,9 +50,8 @@ export function WorkWithMeSection() {
               rel="noopener noreferrer"
               className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
-              LinkedIn
+              Linked.
             </a>
-            .
           </p>
         </div>
       </Container>

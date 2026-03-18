@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import { Container } from "@/components/layout/Container";
 import { MobileNav } from "@/components/layout/MobileNav";
@@ -12,10 +13,18 @@ export function Header() {
       <Container className="flex items-center justify-between">
         <Link
           href="/"
-          className="font-heading text-2xl lg:text-[45px] leading-none tracking-tight focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent uppercase"
-          aria-label="Ivo Weevers — Home"
+          className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded"
+          aria-label="Ivo weevers — Home"
         >
-          Ivo Weevers
+          <Image
+            src="/images/logo-wordmark.svg"
+            alt="Ivo weevers"
+            width={420}
+            height={84}
+            priority
+            unoptimized
+            className="h-10 w-auto lg:h-[52px]"
+          />
         </Link>
 
         <nav

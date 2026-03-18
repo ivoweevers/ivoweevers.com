@@ -62,7 +62,10 @@ export function MobileNav() {
               <X className="h-5 w-5" strokeWidth={2.5} />
             </button>
 
-            <nav className="flex flex-col gap-2" aria-label="Mobile navigation">
+            <nav
+              className="flex flex-row flex-wrap items-center justify-center gap-4"
+              aria-label="Mobile navigation"
+            >
               {mobileNavItems.map((item) => (
                 <Link
                   key={item.href}

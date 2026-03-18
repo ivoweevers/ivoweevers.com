@@ -31,11 +31,11 @@ export function MeetIvoSection() {
 
             <div className="mt-4 lg:mt-6 text-paragraph space-y-4">
               <p>
-                Over 25 years, I&apos;ve co-founded and shipped products used by
-                millions of people. I&apos;ve built and sold my own mobile
-                startup within just 4 years with a team of just 7 people to
-                global banking giant Santander. I have created high-growth
-                products for startups, scale-ups, and enterprises.
+                Over 20 years, I&apos;ve created and shipped high-growth
+                products used by millions of people. I&apos;ve co-founded and
+                sold my own mobile startup within just 4 years with a team of
+                just 7 people to global banking giant Santander. I have
+                launched products for startups, scale-ups, and enterprises.
               </p>
               <p>
                 Recently I have been leading the creation of the first

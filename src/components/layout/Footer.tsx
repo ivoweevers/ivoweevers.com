@@ -8,14 +8,15 @@ export function Footer() {
   return (
     <footer id="contact" className="bg-dark text-white" role="contentinfo">
       <Container className="py-16 lg:py-20">
-        {/* Section heading */}
-        <h2 className="font-heading section-title uppercase">
-          <span className="text-accent">/</span> Contact me
-        </h2>
+        <div className="mx-auto max-w-[800px]">
+          {/* Section heading */}
+          <h2 className="font-heading section-title uppercase">
+            <span className="text-accent">/</span> Contact me
+          </h2>
 
-        <div className="mt-10 lg:mt-14 grid gap-12 lg:grid-cols-[1fr_auto]">
-          {/* Left column: contact info */}
-          <div className="space-y-8 text-nav-item">
+          <div className="mt-10 lg:mt-14 grid gap-12 lg:grid-cols-[1fr_auto]">
+            {/* Left column: contact info */}
+            <div className="space-y-8 text-nav-item">
             {/* Email */}
             <a
               href="mailto:ivo@ivoweevers.com"
@@ -61,34 +62,35 @@ export function Footer() {
               edge with a Mediterranean lifestyle. I tend to be in the place
               where my impact can be the most helpful.
             </p>
+            </div>
+
+            {/* Right column: footer nav */}
+            <nav
+              aria-label="Footer navigation"
+              className="flex flex-col items-end text-right gap-1"
+            >
+              {footerNavItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-nav-item leading-[40px] text-white transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
           </div>
 
-          {/* Right column: footer nav */}
-          <nav
-            aria-label="Footer navigation"
-            className="flex flex-col items-end text-right gap-1"
-          >
-            {footerNavItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-nav-item leading-[40px] text-white transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          {/* Copyright */}
+          <p className="mt-12 lg:mt-16 text-nav-item font-light text-white/70">
+            &copy; {new Date().getFullYear()} Copyright Ivo Weevers. All
+            rights reserved.
+          </p>
+          <p className="mt-1 text-nav-item font-light text-white/70">
+            This website is AA accessible and has been designed and built with
+            Figma, Cursor, Github and Vercel.
+          </p>
         </div>
-
-        {/* Copyright */}
-        <p className="mt-12 lg:mt-16 text-xs lg:text-sm font-light text-white/70">
-          &copy; {new Date().getFullYear()} Copyright Ivo Weevers. All rights
-          reserved.
-        </p>
-        <p className="mt-1 text-xs lg:text-sm font-light text-white/70">
-          This website is AA accessible and has been designed and built with
-          Figma, Cursor, Github and Vercel.
-        </p>
       </Container>
     </footer>
   );
