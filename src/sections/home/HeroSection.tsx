@@ -37,7 +37,7 @@ export function HeroSection() {
           </p>
 
           {/* Pre-register CTA (also shown in the hero) */}
-          <div className="mt-6 flex flex-col items-center">
+          <div className="mt-7 flex flex-col items-center">
             <Button
               render={<Link href="/#contact" />}
               className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/5"
