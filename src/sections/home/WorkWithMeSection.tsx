@@ -23,7 +23,7 @@ export function WorkWithMeSection() {
                 rel="noopener noreferrer"
                 className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
-                Investors in the daring builders of tomorrow
+                Great Stuff Ventures
               </a>{" "}
               and we have done so far in over 40 early-stage companies,
               across exciting sectors including fintech, medtech, and the latest

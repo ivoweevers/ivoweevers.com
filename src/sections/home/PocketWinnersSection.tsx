@@ -40,12 +40,12 @@ export function PocketWinnersSection() {
             </p>
 
             {/* Testimonial (framed quote) */}
-            <div className="mt-6 lg:mt-8 rounded-xl border border-border bg-card/70 p-6 text-center">
-              <p className="text-paragraph italic">
+            <div className="mt-6 lg:mt-8 rounded-xl border border-border bg-vanilla p-6 text-left">
+              <p className="text-nav-item italic leading-[1.6]">
                 &ldquo;The most practical guide to building apps that actually
                 succeed.&rdquo;
               </p>
-              <p className="mt-2 text-paragraph">
+              <p className="mt-2 text-nav-item font-light leading-[1.6] text-left">
                 Tushar Nallan, Director of Mobile Engineering at Pearson and
                 formerly DeliveryHero
               </p>
@@ -53,11 +53,11 @@ export function PocketWinnersSection() {
 
             {/* Coming out date */}
             <p className="mt-6 lg:mt-8 text-[18px] lg:text-[22px] font-bold leading-tight">
-              COMING OUT: APRIL 2026
+              LAUNCH DATE: APRIL 2026
             </p>
 
             {/* CTA buttons */}
-            <div className="mt-6 lg:mt-8 flex flex-wrap gap-4 items-start">
+            <div className="mt-8 lg:mt-10 flex flex-wrap gap-4 items-start">
               <Button
                 render={<Link href="/pocket-winners" />}
                 className="inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
