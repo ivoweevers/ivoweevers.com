@@ -63,7 +63,7 @@ export function MobileNav() {
             </button>
 
             <nav
-              className="flex flex-row flex-wrap items-center justify-center gap-4"
+              className="flex flex-col gap-2"
               aria-label="Mobile navigation"
             >
               {mobileNavItems.map((item) => (

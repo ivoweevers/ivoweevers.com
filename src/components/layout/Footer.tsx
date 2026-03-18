@@ -67,13 +67,13 @@ export function Footer() {
             {/* Right column: footer nav */}
             <nav
               aria-label="Footer navigation"
-              className="flex flex-col items-end text-right gap-1"
+              className="flex flex-row flex-wrap items-center gap-x-6 gap-y-2 lg:flex-col lg:items-end lg:text-right lg:gap-1"
             >
               {footerNavItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-nav-item leading-[40px] text-white transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="text-nav-item leading-normal lg:leading-[40px] whitespace-nowrap text-white transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   {item.label}
                 </Link>
