@@ -56,7 +56,7 @@ export function Footer() {
             </a>
 
             {/* Bio blurb */}
-            <p className="text-nav-item text-white/90 max-w-[752px] mt-8 lg:mt-12">
+            <p className="text-nav-item font-light text-white/90 max-w-[752px] mt-8 lg:mt-12">
               I split my time between London, Amsterdam and Cagliari (capital of
               the Italian island Sardinia) - combining work at technology&apos;s
               edge with a Mediterranean lifestyle. I tend to be in the place
