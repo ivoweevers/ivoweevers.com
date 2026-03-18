@@ -57,7 +57,7 @@ export function PocketWinnersSection() {
             </p>
 
             {/* CTA buttons */}
-            <div className="mt-8 lg:mt-10 flex flex-wrap gap-4 items-start">
+            <div className="mt-6 lg:mt-8 flex flex-wrap gap-4 items-start">
               <Button
                 render={<Link href="/pocket-winners" />}
                 className="inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
