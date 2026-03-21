@@ -6,10 +6,8 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 import {
   Dialog,
-  DialogContent,
   DialogOverlay,
   DialogPortal,
-  DialogClose,
 } from "@/components/ui/dialog";
 
 interface BookImage {
@@ -89,19 +87,20 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
         }}
       >
         <DialogPortal>
-          <DialogOverlay className="bg-black/80" />
+          <DialogOverlay className="bg-black/80" onClick={() => setOpenIndex(null)} />
           <div
             className="fixed inset-0 z-50 flex items-center justify-center p-4"
             onTouchStart={onTouchStart}
             onTouchEnd={onTouchEnd}
           >
             {/* Close */}
-            <DialogClose
+            <button
+              onClick={() => setOpenIndex(null)}
               className="absolute top-4 right-4 z-10 rounded-full bg-white/10 p-2 text-white backdrop-blur-sm transition-colors hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               aria-label="Close preview"
             >
               <X className="h-6 w-6" />
-            </DialogClose>
+            </button>
 
             {/* Prev */}
             {hasPrev && (
