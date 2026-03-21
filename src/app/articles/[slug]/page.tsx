@@ -63,7 +63,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         ]}
       />
 
-      <article className="py-5 md:py-8 lg:py-10">
+      <article className="pt-5 md:pt-8 lg:pt-10 pb-21 md:pb-24 lg:pb-34">
         <Container>
           <div className="max-w-[800px] mx-auto">
             <Link

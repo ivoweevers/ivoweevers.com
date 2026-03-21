@@ -199,7 +199,7 @@ export default function PocketWinnersPage() {
       </section>
 
       {/* Testimonial + Pre-register repeat */}
-      <section className="py-5 md:py-8 lg:py-10">
+      <section className="pt-5 md:pt-8 lg:pt-10 pb-21 md:pb-24 lg:pb-34">
         <Container>
           <div className="max-w-[800px] mx-auto">
             <TestimonialCard />

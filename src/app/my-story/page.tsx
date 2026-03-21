@@ -149,7 +149,7 @@ export default function MyStoryPage() {
       </section>
 
       {/* Book Promo */}
-      <section className="bg-white py-12 md:py-16 lg:py-20">
+      <section className="bg-white pt-12 md:pt-16 lg:pt-20 pb-28 md:pb-32 lg:pb-44">
         <Container>
           <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
             {/* Book cover */}

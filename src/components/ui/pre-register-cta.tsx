@@ -6,6 +6,7 @@ export function PreRegisterCta() {
   return (
     <div className="inline-flex flex-col items-center">
       <Button
+        variant="ghost"
         render={<Link href="/pocket-winners" />}
         className="btn-outline-dark"
       >

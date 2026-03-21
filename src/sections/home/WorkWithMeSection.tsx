@@ -3,7 +3,10 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export function WorkWithMeSection() {
   return (
-    <section id="work-with-me" className="bg-white py-16 md:py-20 lg:py-24">
+    <section
+      id="work-with-me"
+      className="bg-white pt-16 md:pt-20 lg:pt-24 pb-32 md:pb-40 lg:pb-48"
+    >
       <Container>
         <div className="max-w-[800px] mx-auto">
           <SectionHeading>Work with me</SectionHeading>

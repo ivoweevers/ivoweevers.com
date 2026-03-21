@@ -12,7 +12,7 @@ export const metadata: Metadata = createMetadata({
 
 export default function BonusChapterPage() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="pt-20 md:pt-28 pb-36 md:pb-52">
       <Container>
         <div className="mx-auto max-w-3xl">
           <h1 className="font-heading text-4xl font-bold tracking-tight md:text-5xl">
