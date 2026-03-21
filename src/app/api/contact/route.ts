@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { getResend } from "@/lib/resend";
+import { getResend, getSenderAddress } from "@/lib/resend";
 import { contactSchema } from "@/lib/validations";
 
 export async function POST(request: Request) {
@@ -19,7 +19,7 @@ export async function POST(request: Request) {
 
     const resend = getResend();
     await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev",
+      from: getSenderAddress(),
       to: process.env.CONTACT_EMAIL ?? "hello@ivoweevers.com",
       replyTo: email,
       subject: `Contact Form: ${subject}`,

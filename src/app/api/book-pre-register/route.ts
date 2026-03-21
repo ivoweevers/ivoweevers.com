@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { getResend } from "@/lib/resend";
+import { getResend, getSenderAddress } from "@/lib/resend";
 import { preRegisterSchema } from "@/lib/validations";
 import {
   buildPreRegisterConfirmationHtml,
@@ -27,15 +27,17 @@ export async function POST(request: Request) {
       process.env.CONTACT_EMAIL ??
       "ivo@ivoweevers.com";
 
+    const from = getSenderAddress();
+
     await Promise.all([
       resend.emails.send({
-        from: process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev",
+        from,
         to: email,
         subject: "You\u2019re on the list \u2014 thank you",
         html: buildPreRegisterConfirmationHtml(name),
       }),
       resend.emails.send({
-        from: process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev",
+        from,
         to: notifyEmail,
         replyTo: email,
         subject: `Book pre-registration: ${name}`,

@@ -11,3 +11,8 @@ export function getResend(): Resend {
   }
   return _resend;
 }
+
+export function getSenderAddress(): string {
+  const email = process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
+  return `Ivo Weevers <${email}>`;
+}
