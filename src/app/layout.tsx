@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geologica } from "next/font/google";
+import Script from "next/script";
 import { Toaster } from "sonner";
 
 import { Header } from "@/components/layout/Header";
@@ -77,6 +78,16 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster position="bottom-right" />
+        {process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID ? (
+          <Script
+            src={
+              process.env.NEXT_PUBLIC_UMAMI_URL ??
+              "https://cloud.umami.is/script.js"
+            }
+            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+            strategy="afterInteractive"
+          />
+        ) : null}
       </body>
     </html>
   );

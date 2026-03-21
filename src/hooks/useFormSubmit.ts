@@ -36,6 +36,10 @@ export function useFormSubmit<T>({
           toast.success(successMessage);
         }
 
+        if (typeof window !== "undefined" && window.umami) {
+          window.umami.track("form-submit", { endpoint });
+        }
+
         onSuccess?.();
       } catch (error) {
         toast.error(

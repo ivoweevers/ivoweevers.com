@@ -68,7 +68,7 @@ export default function PrivacyPage() {
                   automatically:
                 </p>
                 <ul className="mt-2 list-disc pl-8 space-y-1">
-                  <li>IP address</li>
+                  <li>IP address (anonymised; not stored in raw form)</li>
                   <li>Browser type and version</li>
                   <li>Pages visited and time spent</li>
                   <li>Device type</li>
@@ -127,7 +127,8 @@ export default function PrivacyPage() {
                     Email services (for form responses, e.g. Resend)
                   </li>
                   <li>
-                    Analytics tools (e.g. Google Analytics, anonymised)
+                    Privacy-friendly analytics (Umami &mdash; cookie-free,
+                    anonymised, EU-hosted)
                   </li>
                 </ul>
                 <p className="mt-2">
