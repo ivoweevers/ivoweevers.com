@@ -61,7 +61,7 @@ export default function ArticlesPage() {
           <div className="max-w-[800px] mx-auto">
             <SectionHeading as="h1">Articles</SectionHeading>
 
-            <h2 className="mt-8 lg:mt-10 text-[28px] md:text-[36px] lg:text-[45px] font-medium leading-[1.15]">
+            <h2 className="mt-8 lg:mt-10 text-[22px] md:text-[28px] lg:text-[32px] font-medium leading-[1.15]">
               {featuredArticle.title}
             </h2>
 
@@ -82,6 +82,8 @@ export default function ArticlesPage() {
           </div>
         </Container>
       </section>
+
+      <hr className="border-t border-border max-w-[800px] mx-auto" />
 
       {/* Selected Previous Works */}
       <section className="py-5 md:py-8 lg:py-10">

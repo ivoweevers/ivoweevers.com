@@ -47,7 +47,7 @@ export function PocketWinnersSection() {
               </p>
               <p className="mt-2 text-nav-item font-light leading-[1.6] text-left">
                 Tushar Nallan, Director of Mobile Engineering at Pearson and
-                formerly DeliveryHero
+                formerly at Delivery Hero
               </p>
             </div>
 
@@ -57,7 +57,7 @@ export function PocketWinnersSection() {
             </p>
 
             {/* CTA buttons */}
-            <div className="mt-6 lg:mt-8 flex flex-wrap gap-4 items-start">
+            <div className="mt-6 lg:mt-8 flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center">
               <Button
                 render={<Link href="/pocket-winners" />}
                 className="inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
@@ -67,12 +67,13 @@ export function PocketWinnersSection() {
 
               <div className="inline-flex flex-col items-center">
                 <Button
-                  className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/5"
+                  render={<Link href="/pocket-winners" />}
+                  className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/15"
                 >
                   Pre-register!
                 </Button>
                 <p className="mt-1 text-sm italic text-center">
-                  50% discount on launch day
+                  30% discount on launch day
                 </p>
               </div>
             </div>

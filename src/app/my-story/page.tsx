@@ -148,7 +148,7 @@ export default function MyStoryPage() {
       </section>
 
       {/* Book Promo */}
-      <section className="bg-white py-5 md:py-8 lg:py-10">
+      <section className="bg-white py-12 md:py-16 lg:py-20">
         <Container>
           <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
             {/* Book cover */}
@@ -190,7 +190,7 @@ export default function MyStoryPage() {
                 <div className="inline-flex flex-col items-center">
                   <Button
                     render={<Link href="/pocket-winners#pre-register" />}
-                    className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/5"
+                    className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/15"
                   >
                     Pre-register!
                   </Button>

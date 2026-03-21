@@ -10,7 +10,7 @@ export function HeroSection() {
       <Container>
         <div className="mx-auto max-w-4xl text-center">
           {/* Lead question */}
-          <p className="text-lg md:text-[28px] lg:text-[36px] font-medium leading-[1.2]">
+          <p className="text-xl md:text-[28px] lg:text-[36px] font-medium leading-[1.2]">
             When building a mobile app has never been easier... why do so few
             become truly successful?
           </p>
@@ -28,7 +28,7 @@ export function HeroSection() {
           </div>
 
           {/* Answer line */}
-          <p className="text-lg md:text-[28px] lg:text-[36px] font-medium leading-[1.2]">
+          <p className="text-xl md:text-[28px] lg:text-[36px] font-medium leading-[1.2]">
             My new book &lsquo;
             <span className="font-bold italic text-accent">
               Pocket Winners
@@ -39,13 +39,13 @@ export function HeroSection() {
           {/* Pre-register CTA (also shown in the hero) */}
           <div className="mt-14 flex flex-col items-center">
             <Button
-              render={<Link href="/#contact" />}
-              className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/5"
+              render={<Link href="/pocket-winners" />}
+              className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/15"
             >
               Pre-register!
             </Button>
             <p className="mt-1 text-sm italic text-center">
-              50% discount on launch day
+              30% discount on launch day
             </p>
           </div>
         </div>

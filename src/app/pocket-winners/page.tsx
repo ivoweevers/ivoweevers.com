@@ -57,10 +57,10 @@ export default function PocketWinnersPage() {
             </div>
 
             <div className="mt-10 lg:mt-0 flex-1">
-              <h1 className="font-heading text-[48px] lg:text-[80px] leading-none uppercase">
+              <h1 className="font-heading text-[36px] lg:text-[60px] leading-none uppercase">
                 Pocket Winners
               </h1>
-              <p className="mt-4 lg:mt-6 text-lg md:text-[28px] lg:text-[36px] font-medium leading-[1.2]">
+              <p className="mt-4 lg:mt-6 text-lg md:text-[22px] lg:text-[26px] font-medium leading-[1.2]">
                 Develop the Winning Mindset for Creating Standout Mobile Apps
               </p>
             </div>
@@ -71,12 +71,12 @@ export default function PocketWinnersPage() {
       {/* Pre-register form */}
       <section className="py-5 md:py-8 lg:py-10">
         <Container>
-          <div className="mx-auto max-w-[665px]">
+          <div className="mx-auto max-w-[532px]">
             <p className="text-subheader">
               Register early to get 30% off &mdash; valid on launch day only (in
               April 2026).
             </p>
-            <div className="mt-6">
+            <div className="mt-6 rounded-xl border border-border p-6">
               <PreRegisterForm />
             </div>
           </div>
@@ -208,17 +208,19 @@ export default function PocketWinnersPage() {
               </p>
               <p className="mt-2 text-nav-item font-light leading-[1.6]">
                 Tushar Nallan, Director of Mobile Engineering at Pearson and
-                formerly DeliveryHero
+                formerly at Delivery Hero
               </p>
             </div>
 
-            <div className="mt-10 lg:mt-12">
-              <p className="text-subheader">
-                Register early to get 30% off &mdash; valid on launch day only
-                (in April 2026).
-              </p>
-              <div className="mt-6">
-                <PreRegisterForm />
+            <div className="mt-14 lg:mt-20">
+              <div className="max-w-[532px] mx-auto">
+                <p className="text-subheader">
+                  Register early to get 30% off &mdash; valid on launch day only
+                  (in April 2026).
+                </p>
+                <div className="mt-6 rounded-xl border border-border p-6">
+                  <PreRegisterForm />
+                </div>
               </div>
             </div>
           </div>

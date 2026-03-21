@@ -17,12 +17,11 @@ export function Header() {
           aria-label="Ivo weevers — Home"
         >
           <Image
-            src="/images/logo-wordmark.svg"
+            src="/images/logo-wordmark.png"
             alt="Ivo weevers"
-            width={420}
-            height={84}
+            width={566}
+            height={90}
             priority
-            unoptimized
             className="h-10 w-auto lg:h-[52px]"
           />
         </Link>
