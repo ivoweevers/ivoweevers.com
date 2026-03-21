@@ -152,13 +152,13 @@ export default function PocketWinnersPage() {
           <SectionHeading>Inside the book</SectionHeading>
           <div className="mt-6 lg:mt-8 space-y-6">
             {insideTheBookItems.map((text, i) => (
-              <div key={i} className="flex items-start gap-4">
+              <div key={i} className="flex items-start gap-3">
                 <Image
-                  src="/images/trophy-strip.png"
+                  src="/images/bullet-cup.png"
                   alt=""
-                  width={70}
-                  height={70}
-                  className="shrink-0 w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] object-contain"
+                  width={24}
+                  height={24}
+                  className="shrink-0 w-[1.25em] h-[1.25em] mt-[0.15em] object-contain"
                   aria-hidden="true"
                 />
                 <p className="text-paragraph">{text}</p>
