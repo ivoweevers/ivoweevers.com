@@ -1,9 +1,13 @@
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+
 import { getResend, getSenderAddress } from "@/lib/resend";
 import { handleApiRoute } from "@/lib/api";
 import { preRegisterSchema } from "@/lib/validations";
 import {
   buildPreRegisterConfirmationHtml,
   buildPreRegisterNotificationHtml,
+  PRE_REGISTER_BOOK_COVER_CONTENT_ID,
 } from "@/lib/emails";
 
 export async function POST(request: Request) {
@@ -19,12 +23,28 @@ export async function POST(request: Request) {
         "ivo@ivoweevers.com";
       const from = getSenderAddress();
 
+      const coverPath = path.join(
+        process.cwd(),
+        "public",
+        "images",
+        "pocket-winners-cover.png"
+      );
+      const coverBuffer = await readFile(coverPath);
+
       await Promise.all([
         resend.emails.send({
           from,
           to: email,
           subject: "You\u2019re on the list \u2014 thank you",
           html: buildPreRegisterConfirmationHtml(name),
+          attachments: [
+            {
+              filename: "pocket-winners-cover.png",
+              content: coverBuffer,
+              contentType: "image/png",
+              contentId: PRE_REGISTER_BOOK_COVER_CONTENT_ID,
+            },
+          ],
         }),
         resend.emails.send({
           from,

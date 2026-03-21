@@ -1,11 +1,13 @@
 import { escapeHtml } from "@/lib/utils";
 
-const SITE_URL = "https://www.ivoweevers.com";
 const FONT_STACK = "Arial, Helvetica, sans-serif";
+
+/** Inline attachment content-id; must match `contentId` on the Resend attachment and `cid:` in HTML. */
+export const PRE_REGISTER_BOOK_COVER_CONTENT_ID = "pocket-winners-cover";
 
 export function buildPreRegisterConfirmationHtml(name: string): string {
   const firstName = escapeHtml(name.split(" ")[0]);
-  const bookImageUrl = `${SITE_URL}/images/pocket-winners-cover.png`;
+  const bookImageSrc = `cid:${PRE_REGISTER_BOOK_COVER_CONTENT_ID}`;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -19,7 +21,7 @@ export function buildPreRegisterConfirmationHtml(name: string): string {
         <!-- Book cover -->
         <tr>
           <td align="center" style="padding-bottom:30px;">
-            <img src="${bookImageUrl}" alt="Pocket Winners book cover" width="300" style="display:block;border:0;max-width:300px;width:100%;height:auto;" />
+            <img src="${bookImageSrc}" alt="Pocket Winners book cover" width="300" style="display:block;border:0;max-width:300px;width:100%;height:auto;" />
           </td>
         </tr>
 
