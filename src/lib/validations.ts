@@ -26,5 +26,17 @@ export const contactSchema = z.object({
     .max(2000, "Message must be at most 2000 characters."),
 });
 
+export const preRegisterSchema = z.object({
+  name: z
+    .string()
+    .min(2, "Name must be at least 2 characters.")
+    .max(100, "Name must be at most 100 characters."),
+  email: z
+    .string()
+    .min(1, "Email is required.")
+    .email("Please enter a valid email address."),
+});
+
 export type NewsletterFormValues = z.infer<typeof newsletterSchema>;
 export type ContactFormValues = z.infer<typeof contactSchema>;
+export type PreRegisterFormValues = z.infer<typeof preRegisterSchema>;
