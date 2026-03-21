@@ -102,7 +102,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             {/* About the author */}
             <div className="mt-8 lg:mt-10 flex items-start gap-6">
               <Image
-                src="/images/ivo-story-portrait.png"
+                src="/images/ivo-profile-round.png"
                 alt="Ivo Weevers"
                 width={174}
                 height={174}
