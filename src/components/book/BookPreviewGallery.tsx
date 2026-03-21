@@ -1,14 +1,9 @@
 "use client";
 
 import * as React from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-
-import {
-  Dialog,
-  DialogOverlay,
-  DialogPortal,
-} from "@/components/ui/dialog";
 
 interface BookImage {
   src: string;
@@ -27,6 +22,10 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
   const hasPrev = openIndex !== null && openIndex > 0;
   const hasNext = openIndex !== null && openIndex < images.length - 1;
 
+  function close() {
+    setOpenIndex(null);
+  }
+
   function prev() {
     if (hasPrev) setOpenIndex((i) => (i ?? 0) - 1);
   }
@@ -37,12 +36,20 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
 
   React.useEffect(() => {
     if (!isOpen) return;
+
+    document.body.style.overflow = "hidden";
+
     function onKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") close();
       if (e.key === "ArrowLeft") prev();
       if (e.key === "ArrowRight") next();
     }
+
     window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKeyDown);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen, openIndex]);
 
@@ -80,22 +87,26 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
         ))}
       </div>
 
-      <Dialog
-        open={isOpen}
-        onOpenChange={(open) => {
-          if (!open) setOpenIndex(null);
-        }}
-      >
-        <DialogPortal>
-          <DialogOverlay className="bg-black/80" onClick={() => setOpenIndex(null)} />
+      {isOpen &&
+        createPortal(
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Book page preview"
+            className="fixed inset-0 z-50 flex items-center justify-center"
             onTouchStart={onTouchStart}
             onTouchEnd={onTouchEnd}
           >
+            {/* Backdrop */}
+            <div
+              className="absolute inset-0 bg-black/85"
+              onClick={close}
+              aria-hidden="true"
+            />
+
             {/* Close */}
             <button
-              onClick={() => setOpenIndex(null)}
+              onClick={close}
               className="absolute top-4 right-4 z-10 rounded-full bg-white/10 p-2 text-white backdrop-blur-sm transition-colors hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               aria-label="Close preview"
             >
@@ -114,16 +125,15 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
             )}
 
             {/* Image */}
-            {openIndex !== null && (
-              <Image
-                src={images[openIndex].src}
-                alt={images[openIndex].alt}
-                width={1200}
-                height={1600}
-                className="max-h-[85vh] md:max-h-[92vh] w-auto max-w-[92vw] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl rounded-lg object-contain transition-opacity duration-200"
-                priority
-              />
-            )}
+            <Image
+              src={images[openIndex].src}
+              alt={images[openIndex].alt}
+              width={1200}
+              height={1600}
+              className="relative z-[1] max-h-[90vh] md:max-h-[94vh] w-auto max-w-[94vw] rounded-lg object-contain"
+              sizes="(min-width: 1024px) 80vw, 94vw"
+              priority
+            />
 
             {/* Next */}
             {hasNext && (
@@ -135,9 +145,9 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
                 <ChevronRight className="h-6 w-6" />
               </button>
             )}
-          </div>
-        </DialogPortal>
-      </Dialog>
+          </div>,
+          document.body
+        )}
     </>
   );
 }
