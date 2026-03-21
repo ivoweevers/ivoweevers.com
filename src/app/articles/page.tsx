@@ -59,9 +59,9 @@ export default function ArticlesPage() {
           <div className="max-w-[800px] mx-auto">
             <SectionHeading as="h1">Articles</SectionHeading>
 
-            <div className="mt-8 lg:mt-10 space-y-10 lg:space-y-14">
+            <div className="mt-8 lg:mt-10 divide-y divide-border">
               {articles.map((article) => (
-                <div key={article.slug}>
+                <div key={article.slug} className="py-10 lg:py-14 first:pt-0">
                   <h2 className="text-[22px] md:text-[28px] lg:text-[32px] font-medium leading-[1.15]">
                     {article.title}
                   </h2>
