@@ -127,4 +127,13 @@
     font-size: 0.875rem;
     font-weight: 500;
   }
+  .btn-accent {
+    @apply inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover;
+  }
+  .btn-outline-dark {
+    @apply inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/15;
+  }
+  .link-accent {
+    @apply font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
 }

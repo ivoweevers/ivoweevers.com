@@ -1,8 +1,10 @@
+import { escapeHtml } from "@/lib/utils";
+
 const SITE_URL = "https://www.ivoweevers.com";
 const FONT_STACK = "Arial, Helvetica, sans-serif";
 
 export function buildPreRegisterConfirmationHtml(name: string): string {
-  const firstName = name.split(" ")[0];
+  const firstName = escapeHtml(name.split(" ")[0]);
   const bookImageUrl = `${SITE_URL}/images/pocket-winners-cover.png`;
 
   return `<!DOCTYPE html>
@@ -62,8 +64,8 @@ export function buildPreRegisterNotificationHtml(
 <head><meta charset="utf-8"></head>
 <body style="margin:0;padding:20px;font-family:${FONT_STACK};font-size:14px;color:#333;">
   <h2 style="margin:0 0 16px;">New Book Pre-Registration</h2>
-  <p style="margin:0 0 8px;"><strong>Name:</strong> ${name}</p>
-  <p style="margin:0 0 8px;"><strong>Email:</strong> ${email}</p>
+  <p style="margin:0 0 8px;"><strong>Name:</strong> ${escapeHtml(name)}</p>
+  <p style="margin:0 0 8px;"><strong>Email:</strong> ${escapeHtml(email)}</p>
   <p style="margin:0 0 8px;"><strong>Source:</strong> /pocket-winners</p>
   <p style="margin:0;"><strong>Time:</strong> ${new Date().toISOString()}</p>
 </body>

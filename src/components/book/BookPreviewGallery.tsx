@@ -22,17 +22,17 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
   const hasPrev = openIndex !== null && openIndex > 0;
   const hasNext = openIndex !== null && openIndex < images.length - 1;
 
-  function close() {
-    setOpenIndex(null);
-  }
+  const close = React.useCallback(() => setOpenIndex(null), []);
 
-  function prev() {
-    if (hasPrev) setOpenIndex((i) => (i ?? 0) - 1);
-  }
+  const prev = React.useCallback(() => {
+    setOpenIndex((i) => (i !== null && i > 0 ? i - 1 : i));
+  }, []);
 
-  function next() {
-    if (hasNext) setOpenIndex((i) => (i ?? 0) + 1);
-  }
+  const next = React.useCallback(() => {
+    setOpenIndex((i) =>
+      i !== null && i < images.length - 1 ? i + 1 : i
+    );
+  }, [images.length]);
 
   React.useEffect(() => {
     if (!isOpen) return;
@@ -50,8 +50,7 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
       document.body.style.overflow = "";
       window.removeEventListener("keydown", onKeyDown);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isOpen, openIndex]);
+  }, [isOpen, close, prev, next]);
 
   function onTouchStart(e: React.TouchEvent) {
     touchStartX.current = e.touches[0].clientX;

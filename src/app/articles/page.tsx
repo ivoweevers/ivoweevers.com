@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SectionHeading } from "@/components/ui/section-heading";
 import { JsonLdBreadcrumb } from "@/components/seo/JsonLd";
 import { articles } from "@/lib/articles";
 import { createMetadata } from "@/lib/metadata";
@@ -75,7 +75,7 @@ export default function ArticlesPage() {
                       render={
                         <Link href={`/articles/${article.slug}`} />
                       }
-                      className="inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
+                      className="btn-accent"
                     >
                       Read article
                     </Button>
@@ -104,7 +104,7 @@ export default function ArticlesPage() {
                       href={work.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                      className="link-accent"
                     >
                       {work.linkText}
                     </a>

@@ -4,7 +4,8 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { PreRegisterCta } from "@/components/ui/pre-register-cta";
+import { SectionHeading } from "@/components/ui/section-heading";
 import { JsonLdPerson, JsonLdBreadcrumb } from "@/components/seo/JsonLd";
 import { createMetadata } from "@/lib/metadata";
 
@@ -85,7 +86,7 @@ export default function MyStoryPage() {
                   development and fintech (more in{" "}
                   <Link
                     href="/articles"
-                    className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                    className="link-accent"
                   >
                     articles
                   </Link>
@@ -107,7 +108,7 @@ export default function MyStoryPage() {
                     href="https://greatstuffventures.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                    className="link-accent"
                   >
                     Great Stuff Ventures
                   </a>{" "}
@@ -182,22 +183,12 @@ export default function MyStoryPage() {
               <div className="mt-8 lg:mt-10 flex flex-wrap gap-4 items-start">
                 <Button
                   render={<Link href="/pocket-winners" />}
-                  className="inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
+                  className="btn-accent"
                 >
                   Read more
                 </Button>
 
-                <div className="inline-flex flex-col items-center">
-                  <Button
-                    render={<Link href="/pocket-winners#pre-register" />}
-                    className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/15"
-                  >
-                    Pre-register!
-                  </Button>
-                  <p className="mt-1 text-sm italic text-center">
-                    30% discount on launch day
-                  </p>
-                </div>
+                <PreRegisterCta />
               </div>
             </div>
           </div>

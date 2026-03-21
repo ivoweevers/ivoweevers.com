@@ -1,5 +1,5 @@
 import { Container } from "@/components/layout/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SectionHeading } from "@/components/ui/section-heading";
 
 export function WorkWithMeSection() {
   return (
@@ -21,7 +21,7 @@ export function WorkWithMeSection() {
                 href="https://greatstuffventures.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                className="link-accent"
               >
                 Great Stuff Ventures
               </a>{" "}
@@ -39,7 +39,7 @@ export function WorkWithMeSection() {
             If you are building a product or company, please reach out via{" "}
             <a
               href="mailto:ivo@ivoweevers.com"
-              className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              className="link-accent"
             >
               email
             </a>{" "}
@@ -48,7 +48,7 @@ export function WorkWithMeSection() {
               href="https://linkedin.com/in/ivoweevers"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              className="link-accent"
             >
               Linked.
             </a>

@@ -1,9 +1,7 @@
 "use client";
 
-import * as React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
-import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -14,49 +12,23 @@ import {
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { contactSchema, type ContactFormValues } from "@/lib/validations";
 
 export function ContactForm() {
-  const [isPending, setIsPending] = React.useState(false);
-
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    },
+    defaultValues: { name: "", email: "", subject: "", message: "" },
   });
 
-  async function onSubmit(data: ContactFormValues) {
-    setIsPending(true);
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result.message || "Something went wrong.");
-      }
-
-      toast.success("Message sent! I'll get back to you soon.");
-      form.reset();
-    } catch (error) {
-      toast.error(
-        error instanceof Error ? error.message : "Something went wrong."
-      );
-    } finally {
-      setIsPending(false);
-    }
-  }
+  const { submit, isPending } = useFormSubmit<ContactFormValues>({
+    endpoint: "/api/contact",
+    successMessage: "Message sent! I'll get back to you soon.",
+    onSuccess: () => form.reset(),
+  });
 
   return (
-    <form onSubmit={form.handleSubmit(onSubmit)} noValidate>
+    <form onSubmit={form.handleSubmit(submit)} noValidate>
       <FieldGroup>
         <Controller
           name="name"

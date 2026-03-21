@@ -1,42 +1,23 @@
-import { NextResponse } from "next/server";
-
 import { getResend, getSenderAddress } from "@/lib/resend";
+import { handleApiRoute } from "@/lib/api";
 import { newsletterSchema } from "@/lib/validations";
 
 export async function POST(request: Request) {
-  try {
-    const body = await request.json();
-    const result = newsletterSchema.safeParse(body);
-
-    if (!result.success) {
-      return NextResponse.json(
-        { success: false, message: result.error.issues[0].message },
-        { status: 400 }
-      );
-    }
-
-    const { email } = result.data;
-
-    const resend = getResend();
-    await resend.emails.send({
-      from: getSenderAddress(),
-      to: email,
-      subject: "Welcome to the newsletter!",
-      html: `
-        <h1>Welcome!</h1>
-        <p>Thanks for subscribing to the Ivo Weevers newsletter. You'll receive insights on building apps, entrepreneurship, and more.</p>
-      `,
-    });
-
-    return NextResponse.json({
-      success: true,
-      message: "Successfully subscribed!",
-    });
-  } catch (error) {
-    console.error("Newsletter subscription error:", error);
-    return NextResponse.json(
-      { success: false, message: "Failed to subscribe. Please try again." },
-      { status: 500 }
-    );
-  }
+  return handleApiRoute({
+    request,
+    schema: newsletterSchema,
+    errorMessage: "Failed to subscribe. Please try again.",
+    async handler({ email }) {
+      const resend = getResend();
+      await resend.emails.send({
+        from: getSenderAddress(),
+        to: email,
+        subject: "Welcome to the newsletter!",
+        html: `
+          <h1>Welcome!</h1>
+          <p>Thanks for subscribing to the Ivo Weevers newsletter. You'll receive insights on building apps, entrepreneurship, and more.</p>
+        `,
+      });
+    },
+  });
 }

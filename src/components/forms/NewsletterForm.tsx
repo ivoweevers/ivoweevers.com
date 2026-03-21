@@ -1,55 +1,32 @@
 "use client";
 
-import * as React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
-import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
 import { Field, FieldError } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import { useFormSubmit } from "@/hooks/useFormSubmit";
 import {
   newsletterSchema,
   type NewsletterFormValues,
 } from "@/lib/validations";
 
 export function NewsletterForm() {
-  const [isPending, setIsPending] = React.useState(false);
-
   const form = useForm<NewsletterFormValues>({
     resolver: zodResolver(newsletterSchema),
     defaultValues: { email: "" },
   });
 
-  async function onSubmit(data: NewsletterFormValues) {
-    setIsPending(true);
-    try {
-      const response = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result.message || "Something went wrong.");
-      }
-
-      toast.success("You're subscribed! Check your inbox.");
-      form.reset();
-    } catch (error) {
-      toast.error(
-        error instanceof Error ? error.message : "Something went wrong."
-      );
-    } finally {
-      setIsPending(false);
-    }
-  }
+  const { submit, isPending } = useFormSubmit<NewsletterFormValues>({
+    endpoint: "/api/newsletter",
+    successMessage: "You're subscribed! Check your inbox.",
+    onSuccess: () => form.reset(),
+  });
 
   return (
     <form
-      onSubmit={form.handleSubmit(onSubmit)}
+      onSubmit={form.handleSubmit(submit)}
       className="flex flex-col gap-3 sm:flex-row sm:items-start"
       noValidate
     >

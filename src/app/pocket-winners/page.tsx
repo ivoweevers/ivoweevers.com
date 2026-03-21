@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 import { Container } from "@/components/layout/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { TestimonialCard } from "@/components/ui/testimonial-card";
 import { JsonLdBook, JsonLdBreadcrumb } from "@/components/seo/JsonLd";
 import { createMetadata } from "@/lib/metadata";
 import { PreRegisterForm } from "@/components/forms/PreRegisterForm";
@@ -201,16 +202,7 @@ export default function PocketWinnersPage() {
       <section className="py-5 md:py-8 lg:py-10">
         <Container>
           <div className="max-w-[800px] mx-auto">
-            <div className="rounded-xl border border-border bg-vanilla p-6 text-left">
-              <p className="text-nav-item italic leading-[1.6]">
-                &ldquo;The most practical guide to building apps that actually
-                succeed.&rdquo;
-              </p>
-              <p className="mt-2 text-nav-item font-light leading-[1.6]">
-                Tushar Nallan, Director of Mobile Engineering at Pearson and
-                formerly at Delivery Hero
-              </p>
-            </div>
+            <TestimonialCard />
 
             <div className="mt-14 lg:mt-20">
               <div className="max-w-[532px] mx-auto">

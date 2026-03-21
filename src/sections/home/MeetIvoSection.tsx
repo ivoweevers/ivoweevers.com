@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SectionHeading } from "@/components/ui/section-heading";
 
 export function MeetIvoSection() {
   return (
@@ -46,7 +46,7 @@ export function MeetIvoSection() {
             <div className="mt-8 lg:mt-10">
               <Button
                 render={<Link href="/my-story" />}
-                className="h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
+                className="btn-accent"
               >
                 Read my full story
               </Button>
