@@ -19,22 +19,22 @@ const externalWorks = [
   {
     text: "Firefox OS and Ubuntu for Phones - Digital book:",
     linkText: "Designing Mobile Apps",
-    href: "#",
+    href: "https://appdesignbook.com/en/contents/firefox-os-and-ubuntu-for-phones",
   },
   {
     text: "Design is No Longer an Option \u2013 User Experience (UX) in FinTech:",
     linkText: "Wiley.com",
-    href: "#",
+    href: "https://onlinelibrary.wiley.com/doi/10.1002/9781119218906.ch9",
   },
   {
     text: "App Design Guidelines For High-Performance Mobile User Experiences:",
     linkText: "Smashing Magazine",
-    href: "#",
+    href: "https://www.smashingmagazine.com/2011/07/seven-guidelines-for-designing-high-performance-mobile-user-experiences/",
   },
   {
     text: "GAZE-2: conveying eye contact in group video conferencing using eye-controlled camera direction:",
     linkText: "ACM.org",
-    href: "#",
+    href: "https://dl.acm.org/doi/10.1145/642611.642702",
   },
   {
     text: "Patent US20140189606A1: User interface for a computing device.",
