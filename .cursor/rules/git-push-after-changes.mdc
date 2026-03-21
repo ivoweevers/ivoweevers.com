@@ -1,0 +1,19 @@
+---
+description: After code changes, commit and push to GitHub
+alwaysApply: true
+---
+
+# Push changes to GitHub
+
+When you **finish a task** that edits files in **this repository** (`ivoweevers.com`):
+
+1. **`git status`** — confirm what changed.
+2. **`git add`** the relevant files (or `-A` if the whole change set should ship together).
+3. **`git commit`** with a short, imperative message (e.g. `Fix pre-register button outline`).
+4. **`git push origin main`** (or the current branch if not `main`).
+
+Do this **by default** after implementing fixes or features, unless the user explicitly asks not to push, to skip git, or to leave changes uncommitted.
+
+If the working tree is **clean** and already matches `origin`, skip push.
+
+Never commit or push **secrets** (`.env.local`, API keys). Use `.env.local.example` for documented env vars only.

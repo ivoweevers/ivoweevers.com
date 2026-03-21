@@ -131,7 +131,7 @@
     @apply inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover;
   }
   .btn-outline-dark {
-    @apply inline-flex h-11 rounded-lg border-2 border-black !bg-transparent text-black font-semibold text-sm px-6 shadow-none hover:!bg-black/50 hover:text-white focus-visible:border-black [a]:hover:!bg-black/50 [a]:hover:text-white;
+    @apply inline-flex h-11 rounded-lg !border-2 !border-black !bg-transparent text-black font-semibold text-sm px-6 shadow-none bg-clip-border hover:!bg-black/50 hover:text-white focus-visible:!border-black [a]:hover:!bg-black/50 [a]:hover:text-white;
   }
   .link-accent {
     @apply font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
