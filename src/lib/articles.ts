@@ -24,6 +24,15 @@ export const articles: ArticleMeta[] = [
     author: "Ivo Weevers",
     tags: ["mobile", "strategy", "case study"],
   },
+  {
+    title: "Boosting Conversion by Removing One Word",
+    slug: "boosting-conversion-by-removing-one-word",
+    description:
+      "This is based on a case study in the book \u2014 On mobile, every word carries weight. Not just because screen space is limited, but because each word competes for the user\u2019s attention\u2014and, more importantly, their interpretation.",
+    publishedAt: "2026-03-13",
+    author: "Ivo Weevers",
+    tags: ["mobile", "conversion", "case study"],
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
