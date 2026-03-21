@@ -13,11 +13,11 @@ export function MeetIvoSection() {
           {/* Portrait */}
           <div className="w-full lg:max-w-[402px] shrink-0 overflow-hidden">
             <Image
-              src="/images/ivo-portrait.jpg"
-              alt="Portrait of Ivo Weevers"
-              width={402}
-              height={604}
-              className="w-full h-auto object-cover"
+              src="/images/ivo-portrait.png"
+              alt="Ivo Weevers with a collection of mobile phones on a table"
+              width={682}
+              height={1024}
+              className="w-full h-auto"
             />
           </div>
 
