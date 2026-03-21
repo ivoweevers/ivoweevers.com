@@ -89,9 +89,9 @@ export function PreRegisterForm() {
 
         <Button
           type="submit"
-          variant="ghost"
+          variant="default"
           disabled={isPending}
-          className="btn-accent w-full sm:w-auto"
+          className="h-11 min-h-11 px-6 text-sm font-semibold w-full sm:w-auto"
         >
           {isPending ? "Registering..." : "Register"}
         </Button>
