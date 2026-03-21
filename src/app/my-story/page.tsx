@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
+import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import { JsonLdPerson, JsonLdBreadcrumb } from "@/components/seo/JsonLd";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
   title: "My Story",
   description:
-    "Learn about Ivo Weevers — his journey as an author, entrepreneur, and digital product builder.",
+    "Ivo Weevers — product builder, entrepreneur, investor and author. Over 20 years of creating and shipping products used by millions.",
   path: "/my-story",
 });
 
@@ -21,17 +25,182 @@ export default function MyStoryPage() {
           { name: "My Story", href: "/my-story" },
         ]}
       />
-      <section className="py-20 md:py-28">
+
+      {/* Biography */}
+      <section className="py-5 md:py-8 lg:py-10">
         <Container>
-          <article className="prose prose-lg mx-auto max-w-3xl">
-            <h1 className="font-heading text-4xl font-bold tracking-tight md:text-5xl">
-              My Story
-            </h1>
-            <p className="mt-6 text-lg text-muted-foreground">
-              A personal look at the journey behind the work.
-            </p>
-            {/* Biography content will be populated from Figma designs */}
-          </article>
+          <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
+            {/* Portrait */}
+            <div className="w-full lg:max-w-[402px] shrink-0 overflow-hidden">
+              <Image
+                src="/images/ivo-portrait.png"
+                alt="Ivo Weevers"
+                width={682}
+                height={1024}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+
+            {/* Content */}
+            <div className="mt-10 lg:mt-0 flex-1">
+              <SectionHeading as="h1">My Story</SectionHeading>
+
+              <p className="mt-4 lg:mt-6 text-subheader">
+                Product builder, entrepreneur, investor and author
+              </p>
+
+              <div className="mt-4 lg:mt-6 text-paragraph space-y-4">
+                <p>Hey &ndash; pleased to meet.</p>
+
+                <p>
+                  I build and invest in tech products, specialising in mobile,
+                  AI, edtech, fintech, and productivity. I am the author of{" "}
+                  <em>
+                    Pocket Winners&mdash;Develop the winning mindset to create
+                    standout mobile apps
+                  </em>
+                  .
+                </p>
+
+                <p>
+                  Over 20 years, I have co-founded and shipped products used by
+                  millions of people. I have built and sold my own mobile startup
+                  within just 4 years with a team of just 7 people to global
+                  banking giant Santander, and I have created products for
+                  startups, scaleups, and enterprises such as Natwest (banks),
+                  Pearson (education), Medtronic (medical), Ubuntu (operating
+                  systems), Mercedes (automotive), and Vodafone (mobile
+                  operators).
+                </p>
+
+                <p>
+                  My work has picked up awards (a Cannes Gold Mobile Lion,
+                  &ldquo;Best in Show&rdquo; at Mobile World Congress), global
+                  press coverage (&ldquo;
+                  <em>Setting new grounds, Unique and Beautiful</em>&rdquo; by
+                  Wall Street Journal, &ldquo;
+                  <em>More Elegant than Android</em>&rdquo; by FastCompany),
+                  patent registrations, and features in books on mobile
+                  development and fintech (more in{" "}
+                  <Link
+                    href="/articles"
+                    className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  >
+                    articles
+                  </Link>
+                  ).
+                </p>
+
+                <p>
+                  Fortunately I worked with fantastic people who taught me and
+                  helped create and ship impactful products. However, not every
+                  project succeeded, but each taught me something about what
+                  makes software stick and how to build it in the best way
+                  together with others.
+                </p>
+
+                <p>
+                  I invest in early-stage tech companies as a partner of
+                  Amsterdam-based fund{" "}
+                  <a
+                    href="https://greatstuffventures.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  >
+                    Great Stuff Ventures
+                  </a>{" "}
+                  and together we have invested in over 40 early-stage
+                  companies, across exciting sectors including fintech, medtech,
+                  and the latest AI-startups. I have helped enterprises, startups
+                  and founders with creating unique products and roads to exit.
+                </p>
+
+                <p className="text-center">~</p>
+
+                <p>
+                  After more than 10 years in London, I moved to the
+                  Mediterranean island Sardinia, where I rebuilt a house that now
+                  runs 90% on solar, located on a plot of land that grows olive
+                  trees, citrus trees and many other vegetations and herbs. I
+                  split my time between here, London and Amsterdam and, in this
+                  way, combine my passion at technology&apos;s edge with a
+                  Mediterranean and outdoor life.
+                </p>
+              </div>
+
+              <div className="mt-8 lg:mt-10 text-paragraph space-y-2">
+                <p className="font-bold">
+                  My current near-daily mobile app stack:
+                </p>
+                <p>
+                  Claude, Bear, Spark, WhatsApp, Dropbox, Revolut, Chrome,
+                  Flighty, ChatGPT, Spotify, Strava, WeatherRadar, Dashlane, iOS
+                  suit (Podcasts, Photos, Camera, Mail), Google suit (Calendar,
+                  Maps, Translate), Domestic apps (Daikin, Legrand, Bticino,
+                  FusionSolar).
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Book Promo */}
+      <section className="bg-white py-5 md:py-8 lg:py-10">
+        <Container>
+          <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
+            {/* Book cover */}
+            <div className="w-full max-w-[402px] mx-auto lg:mx-0 shrink-0">
+              <Image
+                src="/images/pocket-winners-cover.png"
+                alt="Pocket Winners book cover"
+                width={422}
+                height={418}
+                className="w-full h-auto"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="mt-10 lg:mt-0 flex-1">
+              <SectionHeading>
+                My Book &lsquo;Pocket Winners&rsquo;
+              </SectionHeading>
+
+              <p className="mt-4 lg:mt-6 text-subheader">
+                Develop the Winning Mindset for Creating Standout Mobile Apps
+              </p>
+
+              <p className="mt-4 lg:mt-6 text-paragraph">
+                In an era when building a mobile app has never been easier, why
+                do so few companies create one that becomes truly indispensable?
+                This book explains how the best app teams think differently
+                through a unique Mobile Mindset.
+              </p>
+
+              <div className="mt-8 lg:mt-10 flex flex-wrap gap-4 items-start">
+                <Button
+                  render={<Link href="/pocket-winners" />}
+                  className="inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
+                >
+                  Read more
+                </Button>
+
+                <div className="inline-flex flex-col items-center">
+                  <Button
+                    render={<Link href="/pocket-winners#pre-register" />}
+                    className="inline-flex h-11 rounded-lg border-2 border-foreground bg-transparent text-foreground font-semibold text-sm px-6 hover:bg-foreground/5"
+                  >
+                    Pre-register!
+                  </Button>
+                  <p className="mt-1 text-sm italic text-center">
+                    30% discount on launch day
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </Container>
       </section>
     </>
