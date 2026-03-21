@@ -119,9 +119,9 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
               <Image
                 src={images[openIndex].src}
                 alt={images[openIndex].alt}
-                width={600}
-                height={800}
-                className="max-h-[85vh] w-auto rounded-lg object-contain transition-opacity duration-200"
+                width={1200}
+                height={1600}
+                className="max-h-[85vh] md:max-h-[92vh] w-auto max-w-[92vw] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl rounded-lg object-contain transition-opacity duration-200"
                 priority
               />
             )}
