@@ -45,7 +45,7 @@ export default function PocketWinnersPage() {
       {/* Hero */}
       <section className="py-5 md:py-8 lg:py-10">
         <Container>
-          <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
             <div className="w-full max-w-[402px] mx-auto lg:mx-0 shrink-0">
               <Image
                 src="/images/pocket-winners-cover.png"
