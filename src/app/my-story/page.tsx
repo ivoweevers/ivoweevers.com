@@ -33,7 +33,7 @@ export default function MyStoryPage() {
             {/* Portrait */}
             <div className="w-full lg:max-w-[402px] shrink-0 overflow-hidden">
               <Image
-                src="/images/ivo-portrait.png"
+                src="/images/ivo-story-portrait.png"
                 alt="Ivo Weevers"
                 width={682}
                 height={1024}
