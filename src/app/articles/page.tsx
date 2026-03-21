@@ -44,8 +44,6 @@ const externalWorks = [
 ];
 
 export default function ArticlesPage() {
-  const featuredArticle = articles[0];
-
   return (
     <>
       <JsonLdBreadcrumb
@@ -55,29 +53,35 @@ export default function ArticlesPage() {
         ]}
       />
 
-      {/* Featured Article */}
+      {/* Articles */}
       <section className="py-5 md:py-8 lg:py-10">
         <Container>
           <div className="max-w-[800px] mx-auto">
             <SectionHeading as="h1">Articles</SectionHeading>
 
-            <h2 className="mt-8 lg:mt-10 text-[22px] md:text-[28px] lg:text-[32px] font-medium leading-[1.15]">
-              {featuredArticle.title}
-            </h2>
+            <div className="mt-8 lg:mt-10 space-y-10 lg:space-y-14">
+              {articles.map((article) => (
+                <div key={article.slug}>
+                  <h2 className="text-[22px] md:text-[28px] lg:text-[32px] font-medium leading-[1.15]">
+                    {article.title}
+                  </h2>
 
-            <p className="mt-4 lg:mt-6 text-paragraph">
-              {featuredArticle.description}
-            </p>
+                  <p className="mt-4 lg:mt-6 text-paragraph">
+                    {article.description}
+                  </p>
 
-            <div className="mt-6 lg:mt-8">
-              <Button
-                render={
-                  <Link href={`/articles/${featuredArticle.slug}`} />
-                }
-                className="inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
-              >
-                Read article
-              </Button>
+                  <div className="mt-6 lg:mt-8">
+                    <Button
+                      render={
+                        <Link href={`/articles/${article.slug}`} />
+                      }
+                      className="inline-flex h-11 rounded-lg bg-accent text-white font-semibold text-sm px-6 hover:bg-accent-hover"
+                    >
+                      Read article
+                    </Button>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </Container>

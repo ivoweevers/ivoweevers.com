@@ -14,6 +14,16 @@ export const articles: ArticleMeta[] = [
     author: "Ivo Weevers",
     tags: ["mobile", "product", "book"],
   },
+  {
+    title:
+      "Flying Higher for Less — How Ryanair Turned Its App into a Profit Engine",
+    slug: "ryanair-app-profit-engine",
+    description:
+      "This is based on a case study in the book — there\u2019s a certain irony in one of Europe\u2019s most aggressively low-cost brands becoming a masterclass in high-impact digital strategy.",
+    publishedAt: "2026-03-13",
+    author: "Ivo Weevers",
+    tags: ["mobile", "strategy", "case study"],
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
