@@ -125,15 +125,16 @@ export function BookPreviewGallery({ images }: BookPreviewGalleryProps) {
             )}
 
             {/* Image */}
-            <Image
-              src={images[openIndex].src}
-              alt={images[openIndex].alt}
-              width={1200}
-              height={1600}
-              className="relative z-[1] max-h-[90vh] md:max-h-[94vh] w-auto max-w-[94vw] rounded-lg object-contain"
-              sizes="(min-width: 1024px) 80vw, 94vw"
-              priority
-            />
+            <div className="relative z-[1] h-[90vh] md:h-[94vh] w-[94vw] md:w-[70vw] lg:w-[55vw] flex items-center justify-center">
+              <Image
+                src={images[openIndex].src}
+                alt={images[openIndex].alt}
+                fill
+                className="object-contain rounded-lg"
+                sizes="(min-width: 1024px) 55vw, (min-width: 768px) 70vw, 94vw"
+                priority
+              />
+            </div>
 
             {/* Next */}
             {hasNext && (
