@@ -42,7 +42,7 @@ export default function PocketWinnersPage() {
       />
 
       {/* Hero */}
-      <section className="py-10 md:py-16 lg:py-20">
+      <section className="py-5 md:py-8 lg:py-10">
         <Container>
           <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
             <div className="w-full max-w-[402px] mx-auto lg:mx-0 shrink-0">
@@ -69,7 +69,7 @@ export default function PocketWinnersPage() {
       </section>
 
       {/* Pre-register form */}
-      <section className="py-10 md:py-16 lg:py-20">
+      <section className="py-5 md:py-8 lg:py-10">
         <Container>
           <div className="mx-auto max-w-[665px]">
             <p className="text-subheader">
@@ -84,7 +84,7 @@ export default function PocketWinnersPage() {
       </section>
 
       {/* About the Book */}
-      <section className="py-10 md:py-16 lg:py-20">
+      <section className="py-5 md:py-8 lg:py-10">
         <Container>
           <div className="max-w-[800px] mx-auto">
             <SectionHeading>About the book</SectionHeading>
@@ -139,7 +139,7 @@ export default function PocketWinnersPage() {
       </section>
 
       {/* Example Pages */}
-      <section className="py-10 md:py-16 lg:py-20">
+      <section className="py-5 md:py-8 lg:py-10">
         <Container>
           <div className="max-w-[800px] mx-auto">
             <SectionHeading>Example pages</SectionHeading>
@@ -151,7 +151,7 @@ export default function PocketWinnersPage() {
       </section>
 
       {/* Inside the Book */}
-      <section className="py-10 md:py-16 lg:py-20">
+      <section className="py-5 md:py-8 lg:py-10">
         <Container>
           <div className="max-w-[800px] mx-auto">
             <SectionHeading>Inside the book</SectionHeading>
@@ -175,7 +175,7 @@ export default function PocketWinnersPage() {
       </section>
 
       {/* Bonus Materials */}
-      <section className="py-10 md:py-16 lg:py-20">
+      <section className="py-5 md:py-8 lg:py-10">
         <Container>
           <div className="max-w-[800px] mx-auto">
             <SectionHeading>Bonus materials</SectionHeading>
@@ -198,7 +198,7 @@ export default function PocketWinnersPage() {
       </section>
 
       {/* Testimonial + Pre-register repeat */}
-      <section className="py-10 md:py-16 lg:py-20">
+      <section className="py-5 md:py-8 lg:py-10">
         <Container>
           <div className="max-w-[800px] mx-auto">
             <div className="rounded-xl border border-border bg-vanilla p-6 text-left">
