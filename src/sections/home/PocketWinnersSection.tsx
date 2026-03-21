@@ -13,11 +13,11 @@ export function PocketWinnersSection() {
           {/* Book cover image */}
           <div className="w-full max-w-[402px] mx-auto lg:mx-0 shrink-0">
             <Image
-              src="/images/pocket-winners-cover.jpg"
+              src="/images/pocket-winners-cover.png"
               alt="Pocket Winners book cover"
-              width={402}
-              height={398}
-              className="w-full h-auto shadow-[8px_8px_10px_0px_rgba(0,0,0,0.25)]"
+              width={422}
+              height={418}
+              className="w-full h-auto"
               priority
             />
           </div>
