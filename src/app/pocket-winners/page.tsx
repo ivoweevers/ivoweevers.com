@@ -25,9 +25,9 @@ const insideTheBookItems = [
 ];
 
 const bookPageImages = [
-  { src: "/images/book-pages/page-1.png", alt: "Pocket Winners page 81 — Develop Your Value Engine, covering retention, revenue and referral stages of the funnel" },
-  { src: "/images/book-pages/page-2.png", alt: "Pocket Winners page 57 — Triple A-ha! moment case study with funnel diagram" },
   { src: "/images/book-pages/page-3.png", alt: "Pocket Winners page 33 — Level 1: Seeing Differently, chapter opener with illustration" },
+  { src: "/images/book-pages/page-2.png", alt: "Pocket Winners page 57 — Triple A-ha! moment case study with funnel diagram" },
+  { src: "/images/book-pages/page-1.png", alt: "Pocket Winners page 81 — Develop Your Value Engine, covering retention, revenue and referral stages of the funnel" },
 ];
 
 export default function PocketWinnersPage() {
