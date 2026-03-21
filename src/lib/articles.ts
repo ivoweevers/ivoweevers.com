@@ -6,20 +6,13 @@ import type { ArticleMeta } from "@/types";
  */
 export const articles: ArticleMeta[] = [
   {
-    title: "Article Title One",
-    slug: "article-title-one",
-    description: "A brief description of the first article.",
+    title: "Why I wrote 'Pocket Winners'",
+    slug: "why-i-wrote-pocket-winners",
+    description:
+      "Every now and then, you find yourself in a team where you just *know*. When that happens, something shifts. A successful product is no longer something you chase — it becomes the almost inevitable outcome.",
     publishedAt: "2026-03-01",
     author: "Ivo Weevers",
-    tags: ["business", "apps"],
-  },
-  {
-    title: "Article Title Two",
-    slug: "article-title-two",
-    description: "A brief description of the second article.",
-    publishedAt: "2026-03-10",
-    author: "Ivo Weevers",
-    tags: ["entrepreneurship"],
+    tags: ["mobile", "product", "book"],
   },
 ];
 
