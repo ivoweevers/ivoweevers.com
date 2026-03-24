@@ -1,10 +1,17 @@
+import Link from "next/link";
+
 export function RyanairAppProfitEngine() {
   return (
     <>
-      <p>
-        This is based on a case study in the book &ndash; there&apos;s a
-        certain irony in one of Europe&apos;s most aggressively low-cost brands
-        becoming a masterclass in high-impact digital strategy.
+      <p className="italic text-paragraph">
+        This article is based on a case study from my book{" "}
+        <Link
+          href="/pocket-winners"
+          className="font-normal not-italic text-accent underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          Pocket Winners
+        </Link>
+        .
       </p>
 
       <p>

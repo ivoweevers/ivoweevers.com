@@ -1,13 +1,25 @@
+import Link from "next/link";
+
 export function BoostingConversionByRemovingOneWord() {
   return (
     <>
+      <p className="italic text-paragraph">
+        This article is based on a case study from my book{" "}
+        <Link
+          href="/pocket-winners"
+          className="font-normal not-italic text-accent underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          Pocket Winners
+        </Link>
+        .
+      </p>
+
       <p>
-        This is based on a case study in the book &ndash; On mobile, every word
-        carries weight. Not just because screen space is limited, but because
-        each word competes for the user&apos;s attention&mdash;and, more
-        importantly, their interpretation. A single misplaced word can introduce
-        hesitation, confusion, or even distrust. And in onboarding, those
-        moments matter more than anywhere else.
+        On mobile, every word carries weight. Not just because screen space is
+        limited, but because each word competes for the user&apos;s
+        attention&mdash;and, more importantly, their interpretation. A single
+        misplaced word can introduce hesitation, confusion, or even distrust. And
+        in onboarding, those moments matter more than anywhere else.
       </p>
 
       <p>
