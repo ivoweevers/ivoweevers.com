@@ -68,7 +68,7 @@ export default function MyStoryPage() {
                   Over 20 years, I have co-founded and shipped products used by
                   millions of people. I have built and sold my own mobile startup
                   within just 4 years and with a team of just 7 people to global
-                  banking giant Santander, I have created products for
+                  banking giant Santander. I have created products for
                   startups, scaleups, and enterprises such as Natwest (banks),
                   Pearson (education), Medtronic (medical), Ubuntu (operating
                   systems), Mercedes (automotive), and Vodafone (mobile
