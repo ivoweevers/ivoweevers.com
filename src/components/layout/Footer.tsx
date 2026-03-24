@@ -87,8 +87,8 @@ export function Footer() {
             rights reserved.
           </p>
           <p className="mt-1 text-nav-item font-light text-white/70">
-            This website is AA accessible and has been designed and built with
-            Figma, Cursor, Github and Vercel.
+            This website has been designed and built with Figma, Cursor, Claude,
+            Github, Resend, Umami and Vercel.
           </p>
         </div>
       </Container>
