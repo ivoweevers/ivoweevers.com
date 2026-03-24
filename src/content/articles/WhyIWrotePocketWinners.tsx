@@ -22,8 +22,8 @@ export function WhyIWrotePocketWinners() {
       </p>
 
       <p>
-        And many of those apps had something in common. They found their way
-        into people&apos;s daily lives. In a world where
+        And the apps these teams built had something in common. They found their way
+        rapidly into people&apos;s daily lives. In a world where
         hundreds of thousands of apps are launched every year, only a handful
         end up in everyone&apos;s pocket and stay there.
         They create new behaviours and redefine business. These are the ones I
@@ -32,9 +32,9 @@ export function WhyIWrotePocketWinners() {
       </p>
 
       <p>
-        A few years ago, after finishing one of those projects, two people said
+        A few years ago, after finishing one of those projects, two team members said
         something that stayed with me: <em>&ldquo;You should write this
-        down.&rdquo;</em> I assumed they were being polite, but I started
+        down.&rdquo;</em> I assumed they were being polite, but after some thought, I started
         anyway.
       </p>
 
