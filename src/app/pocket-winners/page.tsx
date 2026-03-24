@@ -107,7 +107,7 @@ export default function PocketWinnersPage() {
                 detail, and 5) Navigating a non-mobile organisation.
               </p>
               <p>
-                Ivo cuts through buzzwords and abstract theory. He draws on 25
+                Ivo cuts through buzzwords and abstract theory. He draws on 20
                 years of building his own mobile startup and creating and shipping
                 products used by millions for scaleups and enterprises such as
                 Natwest (banks), Pearson (education), Medtronic (medical), Ubuntu
@@ -144,6 +144,9 @@ export default function PocketWinnersPage() {
         <Container>
           <div className="max-w-[800px] mx-auto">
             <SectionHeading>Example pages</SectionHeading>
+            <p className="mt-2 text-paragraph italic font-normal">
+              (click pages to enlarge)
+            </p>
             <div className="mt-6 lg:mt-8">
               <BookPreviewGallery images={bookPageImages} />
             </div>
