@@ -58,8 +58,8 @@ export default function MyStoryPage() {
                   I build and invest in tech products, specialising in mobile,
                   AI, edtech, fintech, and productivity. I am the author of{" "}
                   <em>
-                    Pocket Winners&mdash;Develop the winning mindset to create
-                    standout mobile apps
+                    Pocket Winners&mdash;Develop the Winning Mindset for Creating
+                    Standout Mobile Apps
                   </em>
                   .
                 </p>
@@ -67,12 +67,12 @@ export default function MyStoryPage() {
                 <p>
                   Over 20 years, I have co-founded and shipped products used by
                   millions of people. I have built and sold my own mobile startup
-                  within just 4 years with a team of just 7 people to global
-                  banking giant Santander, and I have created products for
+                  within just 4 years and with a team of just 7 people to global
+                  banking giant Santander, I have created products for
                   startups, scaleups, and enterprises such as Natwest (banks),
                   Pearson (education), Medtronic (medical), Ubuntu (operating
                   systems), Mercedes (automotive), and Vodafone (mobile
-                  operators).
+                  operators). Recently i have been leading the creation of the first AI-enabled education apps for school students.
                 </p>
 
                 <p>
@@ -91,6 +91,10 @@ export default function MyStoryPage() {
                     articles
                   </Link>
                   ).
+                </p>
+
+                <p>
+                I hold a Doctorate in User Interaction Design and an MSc in Computer Science (ENIAC Award for Best Dissertation).
                 </p>
 
                 <p>
@@ -122,7 +126,7 @@ export default function MyStoryPage() {
 
                 <p>
                   After more than 10 years in London, I moved to the
-                  Mediterranean island Sardinia, where I rebuilt a house that now
+                  Mediterranean island of Sardinia, where I rebuilt a house that now
                   runs 90% on solar, located on a plot of land that grows olive
                   trees, citrus trees and many other vegetations and herbs. I
                   split my time between here, London and Amsterdam and, in this
@@ -131,14 +135,14 @@ export default function MyStoryPage() {
                 </p>
               </div>
 
-              <div className="mt-8 lg:mt-10 text-paragraph space-y-2">
+              <div className="mt-8 lg:mt-10 mb-6 lg:mb-8 text-paragraph space-y-4">
                 <p className="font-bold">
                   My current near-daily mobile app stack:
                 </p>
                 <p>
                   Claude, Bear, Spark, WhatsApp, Dropbox, Revolut, Chrome,
                   Flighty, ChatGPT, Spotify, Strava, WeatherRadar, Dashlane, iOS
-                  suit (Podcasts, Photos, Camera, Mail), Google suit (Calendar,
+                  suite (Podcasts, Photos, Camera, Mail), Google suite(Calendar,
                   Maps, Translate), Domestic apps (Daikin, Legrand, Bticino,
                   FusionSolar).
                 </p>
@@ -174,10 +178,9 @@ export default function MyStoryPage() {
               </p>
 
               <p className="mt-4 lg:mt-6 text-paragraph">
-                In an era when building a mobile app has never been easier, why
-                do so few companies create one that becomes truly indispensable?
-                This book explains how the best app teams think differently
-                through a unique Mobile Mindset.
+                We are in an era in which building mobile apps has never been easier; yet so few 
+                companies create ones that succeed. This book explains how the best app teams think differently
+                through a unique Mobile Mindset, and build indispensable apps.
               </p>
 
               <div className="mt-8 lg:mt-10 flex flex-wrap gap-4 items-start">
