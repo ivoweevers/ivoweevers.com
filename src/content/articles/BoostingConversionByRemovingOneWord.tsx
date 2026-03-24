@@ -4,6 +4,7 @@ export function BoostingConversionByRemovingOneWord() {
   return (
     <>
       <p className="italic text-paragraph">
+        (
         This article is based on a case study from my book{" "}
         <Link
           href="/pocket-winners"
@@ -11,7 +12,7 @@ export function BoostingConversionByRemovingOneWord() {
         >
           Pocket Winners
         </Link>
-        .
+        .)
       </p>
 
       <p>
