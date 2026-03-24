@@ -35,7 +35,8 @@ export function PreRegisterForm() {
     return (
       <p className="text-paragraph text-center py-4">
         Thank you so much for your interest. I have sent an email to you with
-        further information.
+        further information. (Please check your spam or promotions folder if
+        you don&apos;t see it.)
       </p>
     );
   }

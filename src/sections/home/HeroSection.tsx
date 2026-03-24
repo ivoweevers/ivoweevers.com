@@ -9,8 +9,7 @@ export function HeroSection() {
       <Container>
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-xl md:text-[28px] lg:text-[36px] font-medium leading-[1.2]">
-            When building a mobile app has never been easier... why do so few
-            become truly successful?
+            Building mobile apps has never been easier; yet so few succeed.
           </p>
 
           <div className="my-8 lg:my-10 flex justify-center">
@@ -29,7 +28,7 @@ export function HeroSection() {
             <span className="font-bold italic text-accent">
               Pocket Winners
             </span>
-            &rsquo; is about that.
+            &rsquo; is about how to become one of them.
           </p>
 
           <div className="mt-14 flex flex-col items-center">

@@ -33,8 +33,8 @@ export function WorkWithMeSection() {
               AI-startups.
             </p>
             <p>
-              I have helped enterprises, startups and founders with creating
-              unique products and roads to exit.
+              I have helped enterprises, startups and founders with making their
+              products more successful, and also their roads to exit.
             </p>
           </div>
 
