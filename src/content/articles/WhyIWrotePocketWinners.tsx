@@ -42,8 +42,10 @@ export function WhyIWrotePocketWinners() {
         Looking back across the mobile teams I&apos;d worked with, I noticed
         something curious. Different companies, different people, different
         contexts &mdash; yet the same patterns kept appearing: similar ways of
-        thinking, deciding, and working together. Maybe this wasn&apos;t luck.
-        Maybe it was something you could describe: The best app teams think and operate differently through a unique mindset: a <em>Mobile Mindset</em>.
+        working, deciding, and building together. Maybe this wasn&apos;t luck.
+        Maybe it was something you could describe: The best app teams think and
+        operate differently through a unique set of behaviours, a unique way of thinking.
+        I call this a <em>Mobile Mindset</em>.
       </p>
 
       <p>
