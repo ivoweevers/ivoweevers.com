@@ -58,7 +58,7 @@ export default function MyStoryPage() {
                   I build and invest in tech products, specialising in mobile,
                   AI, edtech, fintech, and productivity. I am the author of{" "}
                   <em>
-                    Pocket Winners&mdash;Develop the Winning Mindset for Creating
+                    Pocket Winners &mdash; Develop the Winning Mindset for Creating
                     Standout Mobile Apps
                   </em>
                   .
@@ -98,8 +98,8 @@ export default function MyStoryPage() {
                 </p>
 
                 <p>
-                  Fortunately I worked with fantastic people who taught me and
-                  helped create and ship impactful products. However, not every
+                  Fortunately I worked with fantastic people who taught and challenged me and
+                  helped create and ship impactful products. Not every
                   project succeeded, but each taught me something about what
                   makes software stick and how to build it in the best way
                   together with others.

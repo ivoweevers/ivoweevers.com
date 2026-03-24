@@ -8,7 +8,7 @@ export function WhyIWrotePocketWinners() {
         <em>know</em>. No org charts, no noise, no distractions &ndash; you
         can feel it. Conversations are sharper, questions go deeper, trade-offs
         make sense, and, most importantly, everyone is solving the{" "}
-        <em>same problem</em>, not adjacent ones. When that happens, something
+        <em>same problem</em>. When that happens, something
         shifts. A successful product is no longer something you chase &ndash;
         it becomes the almost inevitable outcome.
       </p>
@@ -17,15 +17,15 @@ export function WhyIWrotePocketWinners() {
         I&apos;ve been lucky enough to be part of a few of those teams across
         the many mobile products I&apos;ve worked on: in my own startup, in
         scale-ups, and in enterprise environments. Almost without exception,
-        they built defining products in an unreasonably short amount of time
+        these teams built defining products in an unreasonably short amount of time
         (yes, even in enterprise&hellip;).
       </p>
 
       <p>
         And many of those apps had something in common. They found their way
-        into people&apos;s daily lives and stayed there. In a world where
+        into people&apos;s daily lives. In a world where
         hundreds of thousands of apps are launched every year, only a handful
-        end up in everyone&apos;s pocket and rise to the top of the charts.
+        end up in everyone&apos;s pocket and stay there.
         They create new behaviours and redefine business. These are the ones I
         call <em>Pocket Winners</em>: apps so valuable they become
         indispensable.
@@ -43,7 +43,7 @@ export function WhyIWrotePocketWinners() {
         something curious. Different companies, different people, different
         contexts &mdash; yet the same patterns kept appearing: similar ways of
         thinking, deciding, and working together. Maybe this wasn&apos;t luck.
-        Maybe it was something you could describe.
+        Maybe it was something you could describe: The best app teams think and operate differently through a unique mindset: a <em>Mobile Mindset</em>.
       </p>
 
       <p>
@@ -58,12 +58,12 @@ export function WhyIWrotePocketWinners() {
       <p>
         Get that right, and you unlock something rare: speed <em>and</em>{" "}
         quality, ambition <em>and</em> focus, high standards <em>and</em>{" "}
-        happy teams.
+        happy teams. Add unique mobile behaviours, and you get a highly powerful mix.
       </p>
 
       <p>
-        At the same time, we&apos;re entering a world where building apps has
-        never been easier. AI is lowering the barrier at an extraordinary pace.
+        We&apos;re entering a world where building apps has
+        never been easier. A.I. is lowering the barrier at an extraordinary pace.
         More people can build, more ideas can be tested, more products can
         ship. That&apos;s exciting &ndash; but it changes the game. If
         everyone can build, standing out becomes much harder. The tools
