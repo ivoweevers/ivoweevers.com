@@ -34,7 +34,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-nav-item whitespace-nowrap transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              className="text-nav-item whitespace-nowrap transition-colors hover:text-accent hover:underline hover:underline-offset-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               <span className="text-accent">/</span>{" "}
               {item.label}

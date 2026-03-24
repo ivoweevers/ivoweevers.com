@@ -68,7 +68,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <div className="max-w-[800px] mx-auto">
             <Link
               href="/articles"
-              className="inline-block font-normal text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-paragraph"
+              className="inline-block font-normal text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-paragraph"
             >
               &lt; see all articles
             </Link>

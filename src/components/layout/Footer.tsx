@@ -30,7 +30,7 @@ export function Footer() {
                 className="shrink-0"
                 aria-hidden="true"
               />
-              <span className="text-accent font-bold group-hover:underline">
+              <span className="text-accent font-bold underline underline-offset-2 group-hover:text-accent-hover">
                 ivo@ivoweevers.com
               </span>
             </a>
@@ -50,7 +50,7 @@ export function Footer() {
                 className="shrink-0"
                 aria-hidden="true"
               />
-              <span className="text-accent font-bold group-hover:underline">
+              <span className="text-accent font-bold underline underline-offset-2 group-hover:text-accent-hover">
                 Linkedin page
               </span>
             </a>
@@ -73,7 +73,7 @@ export function Footer() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-nav-item leading-normal lg:leading-[40px] whitespace-nowrap text-white transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="text-nav-item leading-normal lg:leading-[40px] whitespace-nowrap text-white transition-colors hover:text-accent hover:underline hover:underline-offset-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   {item.label}
                 </Link>

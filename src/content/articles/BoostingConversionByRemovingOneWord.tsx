@@ -7,7 +7,7 @@ export function BoostingConversionByRemovingOneWord() {
         This article is based on a case study from my book{" "}
         <Link
           href="/pocket-winners"
-          className="font-normal not-italic text-accent underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          className="font-normal not-italic text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
           Pocket Winners
         </Link>
