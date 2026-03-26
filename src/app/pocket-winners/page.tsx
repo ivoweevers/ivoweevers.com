@@ -12,7 +12,7 @@ import { BookPreviewGallery } from "@/components/book/BookPreviewGallery";
 export const metadata: Metadata = createMetadata({
   title: "Pocket Winners",
   description:
-    "Pocket Winners — develop the winning mindset for creating standout mobile apps. Pre-register now for 30% off on launch day.",
+    "Pocket Winners — develop the winning mindset for creating standout mobile apps. Pre-register now for 30% discount on launch day in April 2026.",
   path: "/pocket-winners",
 });
 
@@ -74,8 +74,9 @@ export default function PocketWinnersPage() {
         <Container>
           <div className="mx-auto max-w-[532px]">
             <p className="text-subheader">
-              Register early to get 30% off &mdash; valid on launch day only (in
-              April 2026).
+              Register early to get 30% discount on launch day
+              <br />
+              in April 2026
             </p>
             <div className="mt-6 rounded-xl border border-border p-6">
               <PreRegisterForm />
@@ -210,8 +211,9 @@ export default function PocketWinnersPage() {
             <div className="mt-14 lg:mt-20">
               <div className="max-w-[532px] mx-auto">
                 <p className="text-subheader">
-                  Register early to get 30% off &mdash; valid on launch day only
-                  (in April 2026).
+                  Register early to get 30% discount on launch day
+                  <br />
+                  in April 2026
                 </p>
                 <div className="mt-6 rounded-xl border border-border p-6">
                   <PreRegisterForm />
