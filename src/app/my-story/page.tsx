@@ -65,7 +65,7 @@ export default function MyStoryPage() {
                 </p>
 
                 <p>
-                  Over 20 years, I have co-founded and shipped products used by
+                  Over 20 years, I have co-founded and shipped mobile products used by
                   millions of people. I have built and sold my own mobile startup
                   within just 4 years and with a team of just 7 people to global
                   banking giant Santander. I have created products for
@@ -94,7 +94,8 @@ export default function MyStoryPage() {
                 </p>
 
                 <p>
-                I hold a Doctorate in User Interaction Design and an MSc in Computer Science (ENIAC Award for Best Dissertation).
+                I hold a Doctorate in User Interaction Design and an MSc in 
+                Computer Science (ENIAC Award for Best Dissertation on multi-agent systems).
                 </p>
 
                 <p>
@@ -140,7 +141,7 @@ export default function MyStoryPage() {
                   My current near-daily mobile app stack:
                 </p>
                 <p>
-                  Claude, Bear, Spark, WhatsApp, Dropbox, Revolut, Chrome,
+                  Claude, Bear, Spark, WhatsApp, Notion, Dropbox, Revolut, Chrome,
                   Flighty, ChatGPT, Spotify, Strava, WeatherRadar, Dashlane, iOS
                   suite (Podcasts, Photos, Camera, Mail), Google suite(Calendar,
                   Maps, Translate), Domestic apps (Daikin, Legrand, Bticino,

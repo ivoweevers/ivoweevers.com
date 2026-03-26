@@ -31,7 +31,7 @@ export function MeetIvoSection() {
 
             <div className="mt-4 lg:mt-6 text-paragraph space-y-4">
               <p>
-                Over 20 years, I&apos;ve created and shipped high-growth
+                Over 20 years, I&apos;ve created and shipped high-growth mobile
                 products used by millions of people. I&apos;ve co-founded and
                 sold my own mobile startup within just 4 years with a team of
                 just 7 people to global banking giant Santander. I have
