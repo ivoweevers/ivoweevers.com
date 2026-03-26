@@ -57,10 +57,14 @@ export default function MyStoryPage() {
                 <p>
                   I build and invest in tech products, specialising in mobile,
                   AI, edtech, fintech, and productivity. I am the author of{" "}
-                  <Link href="/pocket-winners" className="link-accent">
+                  <Link
+                    href="/pocket-winners"
+                    className="font-normal text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  >
                     <em>
-                      Pocket Winners &mdash; Develop the Winning Mindset for
-                      Creating Standout Mobile Apps
+                      <span className="font-bold">Pocket Winners</span>{" "}
+                      &mdash; Develop the Winning Mindset for Creating Standout
+                      Mobile Apps
                     </em>
                   </Link>
                   .
