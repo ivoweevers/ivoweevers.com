@@ -50,7 +50,7 @@ export default function PocketWinnersPage() {
               <Image
                 src="/images/pocket-winners-page-hero-mockup.png"
                 alt="Pocket Winners book cover"
-                width={1024}
+                width={715}
                 height={1024}
                 className="w-full h-auto"
                 priority
