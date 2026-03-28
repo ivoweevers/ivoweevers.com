@@ -5,8 +5,7 @@ export function WhyIWrotePocketWinners() {
     <>
       <p>
         Every now and then, you find yourself in a team where you just{" "}
-        <em>know</em>. No org charts, no noise, no distractions &ndash; you
-        can feel it. Conversations are sharper, questions go deeper, trade-offs
+        <em>know</em>. No org charts, no noise, no distractions. Conversations are sharper, questions go deeper, trade-offs
         make sense, and, most importantly, everyone is solving the{" "}
         <em>same problem</em>. When that happens, something
         shifts. A successful product is no longer something you chase &ndash;
@@ -22,28 +21,29 @@ export function WhyIWrotePocketWinners() {
       </p>
 
       <p>
-        And the apps these teams built had something in common. They found their way
-        rapidly into people&apos;s daily lives. In a world where
+        And the apps these teams built had something in common. They rapidly found their way
+        into people&apos;s daily lives. In a world where
         hundreds of thousands of apps are launched every year, only a handful
         end up in everyone&apos;s pocket and stay there.
-        They create new behaviours and redefine business. These are the ones I
+        These apps create new behaviours and redefine business. These are the ones I
         call <em>Pocket Winners</em>: apps so valuable they become
         indispensable.
       </p>
 
       <p>
-        A few years ago, after finishing one of those projects, two team members said
-        something that stayed with me: <em>&ldquo;You should write this
+        A few years ago, after finishing one of those projects, two team members, 
+        independently from each other, told me 
+        something that stayed with me: <em>&ldquo;We learned a lot. You should write this
         down.&rdquo;</em> I assumed they were being polite, but after some thought, I started
         anyway.
       </p>
 
       <p>
-        Looking back across the mobile teams I&apos;d worked with, I noticed
+        Looking back across the best mobile teams I&apos;d worked with, I noticed
         something curious. Different companies, different people, different
         contexts &mdash; yet the same patterns kept appearing: similar ways of
         working, deciding, and building together. Maybe this wasn&apos;t luck.
-        Maybe it was something you could describe: The best app teams think and
+        Maybe it was something you could describe: The best mobile app teams think and
         operate differently through a unique set of behaviours, a unique way of thinking.
         I call this a <em>Mobile Mindset</em>.
       </p>
@@ -81,7 +81,7 @@ export function WhyIWrotePocketWinners() {
       </p>
 
       <p>
-        If it helps a few teams think a little clearer, move a little faster,
+        If the book helps a few people and teams learn, think a little sharper, move a little faster,
         and build something that truly matters, then it will have been worth
         writing.
       </p>
