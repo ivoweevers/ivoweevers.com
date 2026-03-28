@@ -26,13 +26,13 @@ export function WhyIWrotePocketWinners() {
         hundreds of thousands of apps are launched every year, only a handful
         end up in everyone&apos;s pocket and stay there.
         These apps create new behaviours and redefine business. These are the ones I
-        call <em>Pocket Winners</em>: apps so valuable they become
+        call <em>Pocket Winners</em> &ndash; Apps so valuable they become
         indispensable.
       </p>
 
       <p>
-        A few years ago, after finishing one of those projects, two team members, 
-        independently from each other, told me 
+        A few years ago, after finishing one of those projects, two team members &ndash; 
+        independently from each other &ndash; told me 
         something that stayed with me: <em>&ldquo;We learned a lot. You should write this
         down.&rdquo;</em> I assumed they were being polite, but after some thought, I started
         anyway.
