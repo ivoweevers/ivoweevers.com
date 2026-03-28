@@ -53,7 +53,7 @@ export function WorkWithMeSection() {
               rel="noopener noreferrer"
               className="link-accent"
             >
-              Linked.
+              LinkedIn.
             </a>
           </p>
         </div>
