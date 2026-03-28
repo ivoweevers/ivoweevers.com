@@ -166,10 +166,10 @@ export default function MyStoryPage() {
             {/* Book cover */}
             <div className="w-full max-w-[402px] mx-auto lg:mx-0 shrink-0">
               <Image
-                src="/images/pocket-winners-cover.png"
+                src="/images/pocket-winners-book-standing.png"
                 alt="Pocket Winners book cover"
-                width={422}
-                height={418}
+                width={1024}
+                height={1024}
                 className="w-full h-auto"
               />
             </div>
