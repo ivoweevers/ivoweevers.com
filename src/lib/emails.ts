@@ -40,10 +40,10 @@ export function buildPreRegisterConfirmationHtml(name: string): string {
             <p style="margin:0 0 12px 0;">Here&rsquo;s what will happen next:</p>
             <ul style="margin:0 0 16px 0;padding-left:24px;">
               <li style="margin-bottom:8px;">A few days before launch, you&rsquo;ll receive a reminder with all the details.</li>
-              <li style="margin-bottom:8px;">On launch day in April 2026, I&rsquo;ll send you a direct link to access the book at the special launch price.</li>
+              <li style="margin-bottom:8px;">On launch day in early May 2026, I&rsquo;ll send you a direct link to access the book at the special launch price.</li>
             </ul>
-            <p style="margin:0 0 16px 0;">As an early registrant, you&rsquo;ll be able to purchase the book at a 30% discount on launch day<br />in April 2026.</p>
-            <p style="margin:0 0 16px 0;">This offer is only available on the launch day itself in April 2026.</p>
+            <p style="margin:0 0 16px 0;">As an early registrant, you&rsquo;ll be able to purchase the book at a 30% discount on launch day<br />in early May 2026.</p>
+            <p style="margin:0 0 16px 0;">This offer is only available on the launch day itself in early May 2026.</p>
             <p style="margin:0 0 16px 0;">I&rsquo;m looking forward to sharing the book with you very soon.</p>
             <p style="margin:0;">Warm regards,<br />&ndash; Ivo</p>
           </td>
