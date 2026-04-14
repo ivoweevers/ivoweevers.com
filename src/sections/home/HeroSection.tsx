@@ -28,7 +28,7 @@ export function HeroSection() {
             <span className="font-bold italic text-accent">
               Pocket Winners
             </span>
-            &rsquo; shows how to become one of them.
+            &rsquo; shows how to become one of them in this new A.I. era.
           </p>
 
           <div className="mt-14 flex flex-col items-center">
