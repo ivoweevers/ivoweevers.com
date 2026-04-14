@@ -94,7 +94,7 @@ export default function PocketWinnersPage() {
             <div className="mt-6 lg:mt-8 text-paragraph space-y-6">
               <p>
                 Why do some mobile apps win our time and attention, whilst most
-                fade into obscurity? In an era when building an app has never been
+                fade into obscurity? In this A.I. era when building an app has never been
                 easier, why do so few companies create one that becomes truly
                 indispensable?
               </p>
