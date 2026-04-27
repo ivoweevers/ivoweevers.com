@@ -43,7 +43,7 @@ export function PocketWinnersSection() {
             </div>
 
             <p className="mt-6 lg:mt-8 text-[18px] lg:text-[22px] font-bold leading-tight">
-              LAUNCH DATE: EARLY MAY 2026
+              LAUNCH DATE: WEDNESDAY MAY 13TH 2026
             </p>
 
             <div className="mt-6 lg:mt-8 flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center">

@@ -15,7 +15,7 @@ export function PreRegisterCta() {
       <p className="mt-1 text-sm italic text-center">
         30% discount on launch day
         <br />
-        in early May 2026
+        Wednesday May 13th 2026
       </p>
     </div>
   );

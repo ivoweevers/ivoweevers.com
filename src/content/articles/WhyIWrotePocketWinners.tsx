@@ -87,7 +87,7 @@ export function WhyIWrotePocketWinners() {
       </p>
 
       <p>
-        The book will be out in <strong>early May 2026</strong>. If you are
+        The book will be out on <strong>Wednesday May 13th 2026</strong>. If you are
         interested,{" "}
         <Link
           href="/pocket-winners"
