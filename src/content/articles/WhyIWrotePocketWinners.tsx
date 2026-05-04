@@ -40,7 +40,7 @@ export function WhyIWrotePocketWinners() {
 
       <p>
         Looking back across the best mobile teams I&apos;d worked with, I noticed
-        something curious. Different companies, different people, different
+        something interesting. Different companies, different people, different
         contexts &mdash; yet the same patterns kept appearing: similar ways of
         working, deciding, and building together. Maybe this wasn&apos;t luck.
         Maybe it was something you could describe: The best mobile app teams think and
@@ -87,7 +87,7 @@ export function WhyIWrotePocketWinners() {
       </p>
 
       <p>
-        The book will be out on <strong>Wednesday May 13th 2026</strong>. If you are
+        The book will be out on <strong>Wednesday May 13th 2026</strong> with 30% discount on the first day. If you are
         interested,{" "}
         <Link
           href="/pocket-winners"
