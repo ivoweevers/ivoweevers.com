@@ -13,10 +13,10 @@ export function WhyIWrotePocketWinners() {
 
       <p>
         I&apos;ve been lucky enough to be part of a few of those teams across
-        the many mobile products I&apos;ve worked on: in my own startup, in
-        scale-ups, and in enterprise environments. Almost without exception,
-        these teams built defining products in an unreasonably short amount of time
-        (yes, even in enterprise&hellip;).
+        the 30+ mobile products I&apos;ve worked on: in my own startup, in
+        other startups and scale-ups, and in enterprise environments. Almost
+        without exception, these teams built defining products in an
+        unreasonably short amount of time (yes, even in enterprise&hellip;).
       </p>
 
       <p>
