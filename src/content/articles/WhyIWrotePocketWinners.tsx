@@ -4,12 +4,11 @@ export function WhyIWrotePocketWinners() {
   return (
     <>
       <p>
-        Every now and then, you find yourself in a team where you just{" "}
-        <em>know</em>. No org charts, no noise, no distractions. Conversations are sharper, questions go deeper, trade-offs
-        make sense, and, most importantly, everyone is solving the{" "}
-        <em>same problem</em>. When that happens, something
-        shifts. A successful product is no longer something you chase &ndash;
-        it becomes the almost inevitable outcome.
+        Every now and then, you find yourself in a team where you just know. You
+        know you&apos;re working on something that is going to be good.
+        Conversations are about the things that really matter. Trade-offs just
+        make sense. And, most importantly, everyone cares about the product and
+        the user. Nothing else.
       </p>
 
       <p>
