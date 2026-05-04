@@ -22,7 +22,7 @@ export function RyanairAppProfitEngine() {
         It&apos;s a system that rewires the economics of flying.
       </p>
 
-      <h2 className="text-subheader mt-8">The App as an Operational Engine</h2>
+      <h2 className="text-subheader mt-8">The App as a Core Operational Engine</h2>
 
       <p>
         Ryanair treats their app as core infrastructure. Check-in, boarding
@@ -31,11 +31,21 @@ export function RyanairAppProfitEngine() {
         operations.
       </p>
 
+      <p>
+        Moreover, in 2025, Ryanair moved to 100% digital boarding passes. It
+        looks like a cost decision, but it&apos;s also a smart distribution
+        strategy. The change was never just about the boarding pass. It became
+        the reason to pull every passenger into the mobile app. The app no
+        longer is optional. It&apos;s a mandatory step in the (virtual and real)
+        journey. Ryanair owns this channel.
+      </p>
+
       <p>Every digital boarding pass means:</p>
       <ul className="list-disc pl-8 space-y-2">
         <li>One less printed document</li>
         <li>One less queue</li>
         <li>One less interaction with staff</li>
+        <li>And often underestimated... one more opportunity to sell add-ons</li>
       </ul>
 
       <p>
@@ -48,7 +58,7 @@ export function RyanairAppProfitEngine() {
 
       <p>
         Once the operational layer is digitised, something interesting happens.
-        The booking flow becomes a shop. Seat selection, priority boarding,
+        The booking and boarding pass flow becomes a shop. Seat selection, priority boarding,
         extra baggage, car hire, hotels &ndash; none of these are new. But the
         way they are presented inside the app changes everything.
       </p>
