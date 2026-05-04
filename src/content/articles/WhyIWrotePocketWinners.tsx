@@ -30,11 +30,12 @@ export function WhyIWrotePocketWinners() {
       </p>
 
       <p>
-        A few years ago, after finishing one of those projects, two team members &ndash; 
-        independently from each other &ndash; told me 
-        something that stayed with me: <em>&ldquo;We learned a lot. You should write this
-        down.&rdquo;</em> I assumed they were being polite, but after some thought, I started
-        anyway.
+        A few years ago, after finishing one of those projects, two team members
+        &ndash; independently from each other &ndash; told me something that
+        stayed with me: &ldquo;We learned a lot. You should write this
+        down.&rdquo; I assumed they were being polite, but after some thought, I
+        started anyway. I noticed that I feel rewarded both when I build stuff
+        or when I help people build it.
       </p>
 
       <p>
