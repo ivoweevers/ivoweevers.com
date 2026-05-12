@@ -27,7 +27,7 @@ export async function POST(request: Request) {
         process.cwd(),
         "public",
         "images",
-        "pocket-winners-cover.png"
+        "pocket-winners-book-cover.png"
       );
       const coverBuffer = await readFile(coverPath);
 
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
           html: buildPreRegisterConfirmationHtml(name),
           attachments: [
             {
-              filename: "pocket-winners-cover.png",
+              filename: "pocket-winners-book-cover.png",
               content: coverBuffer,
               contentType: "image/png",
               contentId: PRE_REGISTER_BOOK_COVER_CONTENT_ID,
