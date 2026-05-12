@@ -1,0 +1,10 @@
+---
+description: Default scope is PW Website only
+alwaysApply: true
+---
+
+# Project scope
+
+- Treat **PW Website** (`ivoweevers.com`) as the active project unless the user explicitly names another repo or path.
+- Do not edit **Maverick**, **PW marketing**, or other workspace folders unless the user clearly asks.
+- When the user says **commit**, **git add/commit/push only this repository** unless they specify otherwise.
