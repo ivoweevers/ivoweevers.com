@@ -37,6 +37,9 @@ export const preRegisterSchema = z.object({
     .email("Please enter a valid email address."),
 });
 
+export const bonusChapterRequestSchema = preRegisterSchema;
+
 export type NewsletterFormValues = z.infer<typeof newsletterSchema>;
 export type ContactFormValues = z.infer<typeof contactSchema>;
 export type PreRegisterFormValues = z.infer<typeof preRegisterSchema>;
+export type BonusChapterRequestValues = z.infer<typeof bonusChapterRequestSchema>;

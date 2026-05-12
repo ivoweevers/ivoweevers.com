@@ -73,3 +73,21 @@ export function buildPreRegisterNotificationHtml(
 </body>
 </html>`;
 }
+
+export function buildBonusChapterNotificationHtml(
+  name: string,
+  email: string
+): string {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"></head>
+<body style="margin:0;padding:20px;font-family:${FONT_STACK};font-size:14px;color:#333;">
+  <h2 style="margin:0 0 16px;">Pocket Winners — Extra Chapter Request</h2>
+  <p style="margin:0 0 8px;"><strong>Request type:</strong> Extra chapter</p>
+  <p style="margin:0 0 8px;"><strong>Name:</strong> ${escapeHtml(name)}</p>
+  <p style="margin:0 0 8px;"><strong>Email:</strong> ${escapeHtml(email)}</p>
+  <p style="margin:0 0 8px;"><strong>Source:</strong> /readers/bonus-chapter</p>
+  <p style="margin:0;"><strong>Time:</strong> ${new Date().toISOString()}</p>
+</body>
+</html>`;
+}
