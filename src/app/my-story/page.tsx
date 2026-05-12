@@ -63,7 +63,7 @@ export default function MyStoryPage() {
                   >
                     <em>
                       <span className="font-bold">Pocket Winners</span>{" "}
-                      &mdash; Develop the Winning Mindset for Creating Standout
+                      &mdash; How to Develop the Winning Mindset to Create Standout
                       Mobile Apps
                     </em>
                   </Link>
@@ -181,7 +181,7 @@ export default function MyStoryPage() {
               </SectionHeading>
 
               <p className="mt-4 lg:mt-6 text-subheader">
-                Develop the Winning Mindset for Creating Standout Mobile Apps
+                How to Develop the Winning Mindset to Create Standout Mobile Apps
               </p>
 
               <p className="mt-4 lg:mt-6 text-paragraph">

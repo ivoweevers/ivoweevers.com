@@ -26,7 +26,7 @@ export function PocketWinnersSection() {
             <SectionHeading>Pocket Winners</SectionHeading>
 
             <p className="mt-4 lg:mt-6 text-subheader">
-              Develop the Winning Mindset for Creating Standout Mobile Apps
+              How to Develop the Winning Mindset to Create Standout Mobile Apps
             </p>
 
             <p className="mt-4 lg:mt-6 text-paragraph">

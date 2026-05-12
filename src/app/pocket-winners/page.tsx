@@ -62,7 +62,7 @@ export default function PocketWinnersPage() {
                 Pocket Winners
               </h1>
               <p className="mt-4 lg:mt-6 text-lg md:text-[22px] lg:text-[26px] font-medium leading-[1.2]">
-                Develop the Winning Mindset for Creating Standout Mobile Apps in this new A.I. era.
+                How to Develop the Winning Mindset to Create Standout Mobile Apps in this new A.I. era.
               </p>
             </div>
           </div>
