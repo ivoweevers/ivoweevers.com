@@ -14,7 +14,7 @@ export function PocketWinnersSection() {
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
           <div className="w-full max-w-[402px] mx-auto lg:mx-0 shrink-0">
             <Image
-              src="/images/pocket-winners-book-standing.png"
+              src="/images/pocket-winners-book-cover.png"
               alt="Pocket Winners book cover"
               width={1024}
               height={1024}

@@ -80,10 +80,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             {slug === "why-i-wrote-pocket-winners" && (
               <div className="mt-8 lg:mt-10 flex justify-center">
                 <Image
-                  src="/images/pocket-winners-cover.png"
+                  src="/images/pocket-winners-book-cover.png"
                   alt="Pocket Winners book cover"
-                  width={322}
-                  height={319}
+                  width={1024}
+                  height={1024}
                   className="w-full max-w-[322px] h-auto"
                 />
               </div>
