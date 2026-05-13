@@ -64,16 +64,10 @@ export default function PocketWinnersPage() {
               <p className="mt-4 lg:mt-6 text-lg md:text-[22px] lg:text-[26px] font-medium leading-[1.2]">
                 How to Develop the Winning Mindset to Create Standout Mobile Apps in this new A.I. era.
               </p>
+              <div className="mt-6 lg:mt-8 flex justify-center lg:justify-start">
+                <OrderOnAmazonCta />
+              </div>
             </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Order */}
-      <section className="py-5 md:py-8 lg:py-10">
-        <Container>
-          <div className="mx-auto max-w-[532px] flex justify-center">
-            <OrderOnAmazonCta />
           </div>
         </Container>
       </section>

@@ -3,7 +3,7 @@ import { POCKET_WINNERS_ORDER_URL } from "@/lib/book";
 
 export function OrderOnAmazonCta() {
   return (
-    <div className="inline-flex flex-col items-center">
+    <div className="inline-flex flex-col items-center m-2">
       <Button
         variant="ghost"
         render={
