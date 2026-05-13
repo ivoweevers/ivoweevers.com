@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
-import { PreRegisterCta } from "@/components/ui/pre-register-cta";
+import { OrderOnAmazonCta } from "@/components/ui/order-on-amazon-cta";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { JsonLdPerson, JsonLdBreadcrumb } from "@/components/seo/JsonLd";
 import { createMetadata } from "@/lib/metadata";
@@ -198,7 +198,7 @@ export default function MyStoryPage() {
                   Read more
                 </Button>
 
-                <PreRegisterCta />
+                <OrderOnAmazonCta />
               </div>
             </div>
           </div>

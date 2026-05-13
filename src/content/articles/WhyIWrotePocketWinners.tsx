@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { POCKET_WINNERS_ORDER_URL } from "@/lib/book";
 
 export function WhyIWrotePocketWinners() {
   return (
@@ -87,14 +87,15 @@ export function WhyIWrotePocketWinners() {
       </p>
 
       <p>
-        The book will be out on <strong>Wednesday May 13th 2026</strong> with 30% discount on the first day. If you are
-        interested,{" "}
-        <Link
-          href="/pocket-winners"
+        The book is <strong>out now</strong>. If you would like a copy,{" "}
+        <a
+          href={POCKET_WINNERS_ORDER_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="link-accent"
         >
-          please register your details here
-        </Link>
+          order on Amazon
+        </a>
         .
       </p>
 

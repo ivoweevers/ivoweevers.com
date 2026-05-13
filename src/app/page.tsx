@@ -7,7 +7,7 @@ import { MeetIvoSection } from "@/sections/home/MeetIvoSection";
 import { WorkWithMeSection } from "@/sections/home/WorkWithMeSection";
 
 const HOME_DESCRIPTION =
-  "Ivo Weevers is a product builder and author of Pocket Winners - Develop the winning mindset for creating standout mobile apps.";
+  "Ivo Weevers is a product builder and author of Pocket Winners — how to develop the winning mindset to create standout mobile apps.";
 
 export const metadata: Metadata = {
   description: HOME_DESCRIPTION,

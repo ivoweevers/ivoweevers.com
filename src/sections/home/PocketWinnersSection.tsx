@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
-import { PreRegisterCta } from "@/components/ui/pre-register-cta";
+import { OrderOnAmazonCta } from "@/components/ui/order-on-amazon-cta";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { TestimonialCard } from "@/components/ui/testimonial-card";
 
@@ -54,7 +54,7 @@ export function PocketWinnersSection() {
                 Read about the book
               </Button>
 
-              <PreRegisterCta />
+              <OrderOnAmazonCta />
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { Container } from "@/components/layout/Container";
-import { PreRegisterCta } from "@/components/ui/pre-register-cta";
+import { OrderOnAmazonCta } from "@/components/ui/order-on-amazon-cta";
 
 export function HeroSection() {
   return (
@@ -32,7 +32,7 @@ export function HeroSection() {
           </p>
 
           <div className="mt-14 flex flex-col items-center">
-            <PreRegisterCta />
+            <OrderOnAmazonCta />
           </div>
         </div>
       </Container>

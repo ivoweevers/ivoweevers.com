@@ -6,13 +6,13 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { TestimonialCard } from "@/components/ui/testimonial-card";
 import { JsonLdBook, JsonLdBreadcrumb } from "@/components/seo/JsonLd";
 import { createMetadata } from "@/lib/metadata";
-import { PreRegisterForm } from "@/components/forms/PreRegisterForm";
+import { OrderOnAmazonCta } from "@/components/ui/order-on-amazon-cta";
 import { BookPreviewGallery } from "@/components/book/BookPreviewGallery";
 
 export const metadata: Metadata = createMetadata({
   title: "Pocket Winners",
   description:
-    "Pocket Winners — develop the winning mindset for creating standout mobile apps. Pre-register now for 30% discount on launch day, Wednesday May 13th 2026.",
+    "Pocket Winners — how to develop the winning mindset to create standout mobile apps in the A.I. era. Out now.",
   path: "/pocket-winners",
 });
 
@@ -69,18 +69,11 @@ export default function PocketWinnersPage() {
         </Container>
       </section>
 
-      {/* Pre-register form */}
+      {/* Order */}
       <section className="py-5 md:py-8 lg:py-10">
         <Container>
-          <div className="mx-auto max-w-[532px]">
-            <p className="text-subheader">
-              Register early to get 30% discount on launch day
-              <br />
-              Wednesday May 13th 2026
-            </p>
-            <div className="mt-6 rounded-xl border border-border p-6">
-              <PreRegisterForm />
-            </div>
+          <div className="mx-auto max-w-[532px] flex justify-center">
+            <OrderOnAmazonCta />
           </div>
         </Container>
       </section>
@@ -202,22 +195,15 @@ export default function PocketWinnersPage() {
         </Container>
       </section>
 
-      {/* Testimonial + Pre-register repeat */}
+      {/* Testimonial + order repeat */}
       <section className="pt-5 md:pt-8 lg:pt-10 pb-21 md:pb-24 lg:pb-34">
         <Container>
           <div className="max-w-[800px] mx-auto">
             <TestimonialCard />
 
             <div className="mt-14 lg:mt-20">
-              <div className="max-w-[532px] mx-auto">
-                <p className="text-subheader">
-                  Register early to get 30% discount on launch day
-                  <br />
-                  Wednesday May 13th 2026
-                </p>
-                <div className="mt-6 rounded-xl border border-border p-6">
-                  <PreRegisterForm />
-                </div>
+              <div className="mx-auto max-w-[532px] flex justify-center">
+                <OrderOnAmazonCta />
               </div>
             </div>
           </div>
