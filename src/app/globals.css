@@ -134,7 +134,8 @@
     @apply inline-flex h-11 rounded-lg !border-2 !border-black !bg-transparent text-black font-semibold text-sm px-6 shadow-none bg-clip-border hover:!bg-black/50 hover:text-white focus-visible:!border-black [a]:hover:!bg-black/50 [a]:hover:text-white;
   }
   .btn-order-amazon {
-    @apply inline-flex min-h-12 items-center justify-center rounded-lg bg-black px-9 py-3.5 text-sm font-bold text-white shadow-none transition-colors hover:bg-accent hover:text-white focus-visible:ring-2 focus-visible:ring-black/30 [a]:text-white [a]:hover:bg-accent [a]:hover:text-white;
+    /* Ghost Button adds utility-layer hovers that beat @layer components; ! keeps orange hover. */
+    @apply inline-flex min-h-12 items-center justify-center rounded-lg bg-black px-9 py-3.5 text-sm font-bold !text-white shadow-none transition-colors hover:!bg-accent hover:!text-white focus-visible:ring-2 focus-visible:ring-black/30;
   }
   .link-accent {
     @apply font-bold text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
