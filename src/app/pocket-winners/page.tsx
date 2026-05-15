@@ -65,13 +65,12 @@ export default function PocketWinnersPage() {
                 How to Develop the Winning Mindset to Create Standout Mobile Apps.
               </p>
               <div className="mt-6 lg:mt-8 flex flex-row items-center gap-4 justify-center lg:justify-start">
-                <Image
+                <img
                   src="/images/amazon-best-seller-stacked.png"
                   alt="Amazon #1 Best Seller"
                   width={830}
                   height={561}
-                  unoptimized
-                  className="w-[120px] sm:w-[140px] h-auto shrink-0 bg-transparent"
+                  className="w-[120px] sm:w-[140px] h-auto shrink-0"
                 />
                 <OrderOnAmazonCta />
               </div>

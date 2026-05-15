@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { Button } from "@/components/ui/button";
 import { POCKET_WINNERS_ORDER_URL } from "@/lib/book";
 
@@ -27,13 +25,12 @@ export function OrderOnAmazonCta({
       </Button>
       <p className="mt-1 text-sm italic text-center">Out now.</p>
       {showBestSellerBadge ? (
-        <Image
+        <img
           src="/images/amazon-best-seller.png"
           alt="Amazon #1 Best Seller"
           width={1024}
           height={240}
-          unoptimized
-          className="mt-3 w-full max-w-[280px] h-auto bg-transparent"
+          className="mt-3 w-full max-w-[280px] h-auto"
         />
       ) : null}
     </div>
