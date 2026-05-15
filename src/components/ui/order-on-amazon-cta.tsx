@@ -28,8 +28,8 @@ export function OrderOnAmazonCta({
         <img
           src="/images/amazon-best-seller.png"
           alt="Amazon #1 Best Seller"
-          width={1024}
-          height={240}
+          width={1343}
+          height={315}
           className="mt-3 w-full max-w-[280px] h-auto"
         />
       ) : null}
