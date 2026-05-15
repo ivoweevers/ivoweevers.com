@@ -62,9 +62,16 @@ export default function PocketWinnersPage() {
                 Pocket Winners
               </h1>
               <p className="mt-4 lg:mt-6 text-lg md:text-[22px] lg:text-[26px] font-medium leading-[1.2]">
-                How to Develop the Winning Mindset to Create Standout Mobile Apps in this new A.I. era.
+                How to Develop the Winning Mindset to Create Standout Mobile Apps.
               </p>
-              <div className="mt-6 lg:mt-8 flex justify-center lg:justify-start">
+              <div className="mt-6 lg:mt-8 flex flex-row items-center gap-4 justify-center lg:justify-start">
+                <Image
+                  src="/images/amazon-best-seller-stacked.png"
+                  alt="Amazon #1 Best Seller"
+                  width={830}
+                  height={561}
+                  className="w-[120px] sm:w-[140px] h-auto shrink-0"
+                />
                 <OrderOnAmazonCta />
               </div>
             </div>
