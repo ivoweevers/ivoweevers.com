@@ -32,7 +32,7 @@ export function HeroSection() {
           </p>
 
           <div className="mt-14 flex flex-col items-center">
-            <OrderOnAmazonCta />
+            <OrderOnAmazonCta showBestSellerBadge />
           </div>
         </div>
       </Container>
