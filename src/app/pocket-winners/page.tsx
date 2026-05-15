@@ -70,7 +70,8 @@ export default function PocketWinnersPage() {
                   alt="Amazon #1 Best Seller"
                   width={830}
                   height={561}
-                  className="w-[120px] sm:w-[140px] h-auto shrink-0"
+                  unoptimized
+                  className="w-[120px] sm:w-[140px] h-auto shrink-0 bg-transparent"
                 />
                 <OrderOnAmazonCta />
               </div>

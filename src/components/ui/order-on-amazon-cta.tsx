@@ -32,7 +32,8 @@ export function OrderOnAmazonCta({
           alt="Amazon #1 Best Seller"
           width={1024}
           height={240}
-          className="mt-3 w-full max-w-[280px] h-auto"
+          unoptimized
+          className="mt-3 w-full max-w-[280px] h-auto bg-transparent"
         />
       ) : null}
     </div>
