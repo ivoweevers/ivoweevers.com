@@ -42,11 +42,7 @@ export function PocketWinnersSection() {
               <TestimonialCard />
             </div>
 
-            <p className="mt-6 lg:mt-8 text-[18px] lg:text-[22px] font-bold leading-tight">
-              LAUNCH DATE: WEDNESDAY MAY 13TH 2026
-            </p>
-
-            <div className="mt-6 lg:mt-8 flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center">
+            <div className="mt-8 lg:mt-12 flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center">
               <Button
                 render={<Link href="/pocket-winners" />}
                 className="btn-accent"

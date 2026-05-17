@@ -200,6 +200,14 @@ export default function MyStoryPage() {
 
                 <OrderOnAmazonCta />
               </div>
+
+              <img
+                src="/images/amazon-best-seller.png"
+                alt="Amazon #1 Best Seller"
+                width={1343}
+                height={315}
+                className="mt-6 w-full max-w-[280px] h-auto"
+              />
             </div>
           </div>
         </Container>
