@@ -89,6 +89,18 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               </div>
             )}
 
+            {slug === "why-spotify-never-lets-the-music-stop" && (
+              <div className="mt-8 lg:mt-10 flex justify-center">
+                <Image
+                  src="/images/spotify-tunnel-moment.jpg"
+                  alt="Spotify logo next to a sailing boat illustration"
+                  width={1024}
+                  height={317}
+                  className="w-full h-auto"
+                />
+              </div>
+            )}
+
             <div className="mt-8 lg:mt-10 text-paragraph space-y-4">
               {ArticleBody && <ArticleBody />}
             </div>

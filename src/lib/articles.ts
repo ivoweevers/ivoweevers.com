@@ -6,6 +6,15 @@ import type { ArticleMeta } from "@/types";
  */
 export const articles: ArticleMeta[] = [
   {
+    title: "Why the Spotify Mobile App Never Lets the Music Stop",
+    slug: "why-spotify-never-lets-the-music-stop",
+    description:
+      "Driving through Sardinia with a patchy signal, the music never stopped \u2014 by design. How Spotify quietly handles the Tunnel Moment to protect habits, subscriptions, and artist payouts all at once.",
+    publishedAt: "2026-06-01",
+    author: "Ivo Weevers",
+    tags: ["mobile", "product", "case study"],
+  },
+  {
     title: "Why I wrote 'Pocket Winners'",
     slug: "why-i-wrote-pocket-winners",
     description:
