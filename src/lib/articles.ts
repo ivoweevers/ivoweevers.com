@@ -6,6 +6,15 @@ import type { ArticleMeta } from "@/types";
  */
 export const articles: ArticleMeta[] = [
   {
+    title: "Taste What You Cook",
+    slug: "taste-what-you-cook",
+    description:
+      "The best mobile opportunities are often discovered away from your desk. The gap between how apps are built and how they're actually used is usually where the strongest strategic opportunities appear.",
+    publishedAt: "2026-06-16",
+    author: "Ivo Weevers",
+    tags: ["mobile", "strategy", "product"],
+  },
+  {
     title: "Why the Spotify Mobile App Never Lets the Music Stop",
     slug: "why-spotify-never-lets-the-music-stop",
     description:
