@@ -3,12 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { ShareArticleButton } from "@/components/articles/ShareArticleButton";
 import { Container } from "@/components/layout/Container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { JsonLdArticle, JsonLdBreadcrumb } from "@/components/seo/JsonLd";
 import { articleBodyBySlug } from "@/content/articles";
 import { getArticleBySlug, getAllArticleSlugs } from "@/lib/articles";
-import { createMetadata } from "@/lib/metadata";
+import { createMetadata, siteConfig } from "@/lib/metadata";
 
 interface ArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -45,6 +46,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   }
 
   const ArticleBody = articleBodyBySlug[slug];
+  const articleUrl = `${siteConfig.url}/articles/${article.slug}`;
 
   return (
     <>
@@ -66,12 +68,15 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <article className="pt-5 md:pt-8 lg:pt-10 pb-21 md:pb-24 lg:pb-34">
         <Container>
           <div className="max-w-[800px] mx-auto">
-            <Link
-              href="/articles"
-              className="inline-block font-normal text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-paragraph"
-            >
-              &lt; see all articles
-            </Link>
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <Link
+                href="/articles"
+                className="inline-block font-normal text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-paragraph"
+              >
+                &lt; see all articles
+              </Link>
+              <ShareArticleButton title={article.title} url={articleUrl} />
+            </div>
 
             <div className="mt-6">
               <SectionHeading as="h1">{article.title}</SectionHeading>
@@ -127,6 +132,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 </p>
               </div>
             </div>
+
+            <p className="mt-8 lg:mt-10 text-center">
+              <ShareArticleButton
+                title={article.title}
+                url={articleUrl}
+                className="justify-center"
+              />
+            </p>
 
             <p className="mt-8 lg:mt-10 text-center">
               <Link
