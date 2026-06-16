@@ -110,6 +110,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               {ArticleBody && <ArticleBody />}
             </div>
 
+            <p className="mt-10 lg:mt-12 text-center">
+              <ShareArticleButton
+                title={article.title}
+                url={articleUrl}
+                className="justify-center"
+              />
+            </p>
+
             <hr className="mt-12 lg:mt-16 border-t border-border" />
 
             <div className="mt-8 lg:mt-10 flex items-start gap-6">
@@ -132,14 +140,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 </p>
               </div>
             </div>
-
-            <p className="mt-8 lg:mt-10 text-center">
-              <ShareArticleButton
-                title={article.title}
-                url={articleUrl}
-                className="justify-center"
-              />
-            </p>
 
             <p className="mt-8 lg:mt-10 text-center">
               <Link

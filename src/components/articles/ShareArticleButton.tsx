@@ -92,7 +92,7 @@ export function ShareArticleButton({ title, url, className }: ShareArticleButton
             <button
               type="button"
               onClick={handleCopyLink}
-              className="btn-accent w-full justify-center"
+              className="btn-accent w-full items-center justify-center"
             >
               {copied ? (
                 <>
