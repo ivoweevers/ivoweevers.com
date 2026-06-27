@@ -6,6 +6,15 @@ import type { ArticleMeta } from "@/types";
  */
 export const articles: ArticleMeta[] = [
   {
+    title: "How a Bottle of Wine Helped Us Validate Our First App",
+    slug: "how-a-bottle-of-wine-helped-us-validate-our-first-app",
+    description:
+      "How do you get early customer feedback on a new app when you don't have customers yet? We used a bottle of wine \u2014 and the conversations it sparked uncovered issues no data dashboard would have shown us.",
+    publishedAt: "2026-06-27",
+    author: "Ivo Weevers",
+    tags: ["mobile", "product", "research"],
+  },
+  {
     title: "Taste What You Cook",
     slug: "taste-what-you-cook",
     description:

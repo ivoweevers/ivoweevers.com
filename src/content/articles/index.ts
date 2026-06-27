@@ -5,6 +5,7 @@ import { RyanairAppProfitEngine } from "./RyanairAppProfitEngine";
 import { BoostingConversionByRemovingOneWord } from "./BoostingConversionByRemovingOneWord";
 import { WhySpotifyNeverLetsTheMusicStop } from "./WhySpotifyNeverLetsTheMusicStop";
 import { TasteWhatYouCook } from "./TasteWhatYouCook";
+import { BottleOfWineValidateFirstApp } from "./BottleOfWineValidateFirstApp";
 
 export const articleBodyBySlug: Record<string, ComponentType> = {
   "why-i-wrote-pocket-winners": WhyIWrotePocketWinners,
@@ -12,4 +13,6 @@ export const articleBodyBySlug: Record<string, ComponentType> = {
   "boosting-conversion-by-removing-one-word": BoostingConversionByRemovingOneWord,
   "why-spotify-never-lets-the-music-stop": WhySpotifyNeverLetsTheMusicStop,
   "taste-what-you-cook": TasteWhatYouCook,
+  "how-a-bottle-of-wine-helped-us-validate-our-first-app":
+    BottleOfWineValidateFirstApp,
 };
