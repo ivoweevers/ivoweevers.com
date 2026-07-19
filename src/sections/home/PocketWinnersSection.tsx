@@ -42,28 +42,7 @@ export function PocketWinnersSection() {
               <TestimonialCard />
               <TestimonialCard
                 quote="This book covers everything you should do with your mobile app, but probably don't"
-                attribution={
-                  <>
-                    Martin Alderson, AI author at{" "}
-                    <a
-                      href="https://martinalderson.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link-accent"
-                    >
-                      martinalderson.com
-                    </a>{" "}
-                    and founder{" "}
-                    <a
-                      href="https://catchmetrics.io"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link-accent"
-                    >
-                      catchmetrics.io
-                    </a>
-                  </>
-                }
+                attribution="Martin Alderson, AI author at martinalderson.com and founder catchmetrics.io"
               />
             </div>
 
