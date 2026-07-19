@@ -8,7 +8,7 @@ export function TestimonialCard() {
         alt="Five out of five stars"
         width={505}
         height={361}
-        className="mx-auto mb-3 h-auto w-28"
+        className="mx-auto -mb-3 -mt-2 h-auto w-24"
       />
       <p className="text-nav-item italic leading-[1.6]">
         &ldquo;The most practical guide to building apps that actually
