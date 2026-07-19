@@ -200,7 +200,37 @@ export default function PocketWinnersPage() {
       <section className="pt-5 md:pt-8 lg:pt-10 pb-21 md:pb-24 lg:pb-34">
         <Container>
           <div className="max-w-[800px] mx-auto">
-            <TestimonialCard />
+            <div className="space-y-4">
+              <TestimonialCard />
+              <TestimonialCard
+                quote="This book covers everything you should do with your mobile app, but probably don't"
+                attribution="Martin Alderson, AI author at martinalderson.com and founder catchmetrics.io"
+              />
+              <TestimonialCard
+                quote="Read this book if you want loyal customers, not just downloads."
+                attribution="H.L. Lamberts - founder essence.eu, customer experience agency, the Netherlands"
+              />
+              <TestimonialCard
+                quote="Devoured it in an afternoon…"
+                attribution="Dan - CTO, startup founder, and ex-mobile developer BBC, United Kingdom"
+              />
+              <TestimonialCard
+                quote="A must read for product and tech leaders who want to build world-class mobile apps"
+                attribution="Anusha - Germany"
+              />
+              <TestimonialCard
+                quote="A Practical, Insight-Packed Read for App Builders"
+                attribution="Ruslan Padnevych - Android Engineering Manager, Spain"
+              />
+              <TestimonialCard
+                quote="A must read. The Mobile Mindset framework is refreshingly practical"
+                attribution="Pho - Senior Mobile Marketing Manager, France"
+              />
+              <TestimonialCard
+                quote="Not just for apps. This book contains lots of relevant information for anyone building ANY sort of product or service in today's digital world."
+                attribution="Amazon Customer - United Kingdom"
+              />
+            </div>
 
             <div className="mt-14 lg:mt-20">
               <div className="mx-auto max-w-[532px] flex justify-center">
