@@ -1,6 +1,15 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 
-export function TestimonialCard() {
+interface TestimonialCardProps {
+  quote?: string;
+  attribution?: ReactNode;
+}
+
+export function TestimonialCard({
+  quote = "The most practical guide to building apps that actually succeed.",
+  attribution = "Tushar Nallan, Director of Mobile Engineering at Pearson and formerly at Delivery Hero",
+}: TestimonialCardProps) {
   return (
     <div className="rounded-xl border border-border bg-vanilla p-6 text-center">
       <Image
@@ -11,12 +20,10 @@ export function TestimonialCard() {
         className="mx-auto mb-3 h-auto w-28"
       />
       <p className="text-nav-item italic leading-[1.6]">
-        &ldquo;The most practical guide to building apps that actually
-        succeed.&rdquo;
+        &ldquo;{quote}&rdquo;
       </p>
       <p className="mt-2 text-nav-item font-light leading-[1.6]">
-        Tushar Nallan, Director of Mobile Engineering at Pearson and formerly at
-        Delivery Hero
+        {attribution}
       </p>
     </div>
   );
