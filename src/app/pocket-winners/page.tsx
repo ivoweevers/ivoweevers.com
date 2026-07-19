@@ -74,6 +74,21 @@ export default function PocketWinnersPage() {
                 />
                 <OrderOnAmazonCta />
               </div>
+
+              <div className="mt-6 lg:mt-8 flex justify-center lg:justify-start">
+                <div className="rounded-xl border border-border bg-vanilla px-6 py-4 text-center">
+                  <Image
+                    src="/images/five-stars.png"
+                    alt="Five out of five stars"
+                    width={487}
+                    height={114}
+                    className="mx-auto mb-2 h-auto w-28"
+                  />
+                  <a href="#reviews" className="link-accent text-nav-item">
+                    Read the reviews
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </Container>
@@ -197,7 +212,10 @@ export default function PocketWinnersPage() {
       </section>
 
       {/* Testimonial + order repeat */}
-      <section className="pt-5 md:pt-8 lg:pt-10 pb-21 md:pb-24 lg:pb-34">
+      <section
+        id="reviews"
+        className="scroll-mt-24 pt-5 md:pt-8 lg:pt-10 pb-21 md:pb-24 lg:pb-34"
+      >
         <Container>
           <div className="max-w-[800px] mx-auto">
             <div className="space-y-4">
