@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { FollowOnLinkedIn } from "@/components/articles/FollowOnLinkedIn";
+
 export function RyanairAppProfitEngine() {
   return (
     <>
@@ -77,6 +79,8 @@ export function RyanairAppProfitEngine() {
         where many products get it wrong. They separate &ldquo;core
         experience&rdquo; and &ldquo;monetisation.&rdquo; Ryanair merges them.
       </p>
+
+      <FollowOnLinkedIn />
 
       <h2 className="text-subheader mt-8">
         Owning the Customer Relationship

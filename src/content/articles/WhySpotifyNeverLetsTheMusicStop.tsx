@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { FollowOnLinkedIn } from "@/components/articles/FollowOnLinkedIn";
+
 export function WhySpotifyNeverLetsTheMusicStop() {
   return (
     <>
@@ -71,6 +73,8 @@ export function WhySpotifyNeverLetsTheMusicStop() {
       <p>
         Does this benefit artists as well? Yes, it benefits the whole chain.
       </p>
+
+      <FollowOnLinkedIn />
 
       <p>
         More plays increase an artist&apos;s slice of the royalty pool, and

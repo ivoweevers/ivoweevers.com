@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { FollowOnLinkedIn } from "@/components/articles/FollowOnLinkedIn";
+
 export function BottleOfWineValidateFirstApp() {
   return (
     <>
@@ -45,6 +47,8 @@ export function BottleOfWineValidateFirstApp() {
         you use this again? What worried you? Those conversations uncovered
         issues no data dashboard would have shown us.
       </p>
+
+      <FollowOnLinkedIn />
 
       <p>
         The insights led directly to our first onboarding redesign and

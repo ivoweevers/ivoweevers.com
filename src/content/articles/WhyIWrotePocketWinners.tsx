@@ -1,4 +1,5 @@
 import { POCKET_WINNERS_ORDER_URL } from "@/lib/book";
+import { FollowOnLinkedIn } from "@/components/articles/FollowOnLinkedIn";
 
 export function WhyIWrotePocketWinners() {
   return (
@@ -62,6 +63,8 @@ export function WhyIWrotePocketWinners() {
         quality, ambition <em>and</em> focus, high standards <em>and</em>{" "}
         happy teams. Add unique mobile behaviours, and you get a highly powerful mix.
       </p>
+
+      <FollowOnLinkedIn />
 
       <p>
         We&apos;re entering a world where building apps has

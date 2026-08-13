@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { FollowOnLinkedIn } from "@/components/articles/FollowOnLinkedIn";
+
 export function BoostingConversionByRemovingOneWord() {
   return (
     <>
@@ -77,6 +79,8 @@ export function BoostingConversionByRemovingOneWord() {
         feature created the opposite effect. One word &ndash; Dropbox &ndash;
         was hurting our onboarding conversion.
       </p>
+
+      <FollowOnLinkedIn />
 
       <p>So we made a small change. We removed the word.</p>
 

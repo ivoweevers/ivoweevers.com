@@ -51,7 +51,7 @@ export function Footer() {
                 aria-hidden="true"
               />
               <span className="text-accent font-bold underline underline-offset-2 group-hover:text-accent-hover">
-                Linkedin page
+                Follow me on Linkedin
               </span>
             </a>
 

@@ -131,12 +131,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               <div>
                 <p className="text-subheader">About the author</p>
                 <p className="mt-2 text-paragraph">
-                  Hi, I&apos;m Ivo. Over 20 years, I&apos;ve created and
-                  shipped high-growth products used by millions of people.
-                  I&apos;ve co-founded and sold my own mobile startup within
-                  just 4 years with a team of just 7 people to global banking
-                  giant Santander. I have launched products for startups,
-                  scale-ups, and enterprises.
+                  Hi, I&apos;m Ivo. Mobile &amp; AI Product Leader, Exited
+                  Founder, Best-Selling Author and Early-Stage Investor. Over 20
+                  years, I&apos;ve created and shipped successful, high-growth
+                  products used by millions of people. For startups, scale-ups,
+                  and enterprises. Recently I have been leading the first
+                  AI-powered education apps for schools worldwide.
                 </p>
               </div>
             </div>

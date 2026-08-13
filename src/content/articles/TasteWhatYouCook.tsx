@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { FollowOnLinkedIn } from "@/components/articles/FollowOnLinkedIn";
+
 export function TasteWhatYouCook() {
   return (
     <>
@@ -59,6 +61,8 @@ export function TasteWhatYouCook() {
         invoices while waiting for his meal at McDonald&apos;s. Neither story
         was about accounting. Both were about fitting into real life.
       </p>
+
+      <FollowOnLinkedIn />
 
       <p>That&apos;s why I ask three simple things from my product teams:</p>
 
