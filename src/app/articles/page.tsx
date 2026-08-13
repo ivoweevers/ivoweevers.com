@@ -63,7 +63,12 @@ export default function ArticlesPage() {
               {articles.map((article) => (
                 <div key={article.slug} className="py-10 lg:py-14 first:pt-0">
                   <h2 className="text-[22px] md:text-[28px] lg:text-[32px] font-medium leading-[1.15]">
-                    {article.title}
+                    <Link
+                      href={`/articles/${article.slug}`}
+                      className="transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                    >
+                      {article.title}
+                    </Link>
                   </h2>
 
                   <p className="mt-4 lg:mt-6 text-paragraph">
