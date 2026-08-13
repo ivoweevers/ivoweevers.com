@@ -48,7 +48,7 @@ export default function MyStoryPage() {
               <SectionHeading as="h1">My Story</SectionHeading>
 
               <p className="mt-4 lg:mt-6 text-subheader">
-                Product builder, entrepreneur, investor and author
+                Mobile &amp; AI Product Leader, Exited Founder, Best-Selling Author and Early-Stage Investor
               </p>
 
               <div className="mt-4 lg:mt-6 text-paragraph space-y-4">
