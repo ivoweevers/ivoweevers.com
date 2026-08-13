@@ -17,24 +17,6 @@ export function Footer() {
           <div className="mt-10 lg:mt-14 grid gap-12 lg:grid-cols-[1fr_auto]">
             {/* Left column: contact info */}
             <div className="space-y-8 text-nav-item">
-            {/* Email */}
-            <a
-              href="mailto:ivo@ivoweevers.com"
-              className="flex items-center gap-4 group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded"
-            >
-              <Image
-                src="/images/icon-email.png"
-                alt=""
-                width={48}
-                height={48}
-                className="shrink-0"
-                aria-hidden="true"
-              />
-              <span className="text-accent font-bold underline underline-offset-2 group-hover:text-accent-hover">
-                ivo@ivoweevers.com
-              </span>
-            </a>
-
             {/* LinkedIn */}
             <a
               href="https://linkedin.com/in/ivoweevers"
@@ -52,6 +34,24 @@ export function Footer() {
               />
               <span className="text-accent font-bold underline underline-offset-2 group-hover:text-accent-hover">
                 Follow me on Linkedin
+              </span>
+            </a>
+
+            {/* Email */}
+            <a
+              href="mailto:ivo@ivoweevers.com"
+              className="flex items-center gap-4 group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded"
+            >
+              <Image
+                src="/images/icon-email.png"
+                alt=""
+                width={48}
+                height={48}
+                className="shrink-0"
+                aria-hidden="true"
+              />
+              <span className="text-accent font-bold underline underline-offset-2 group-hover:text-accent-hover">
+                ivo@ivoweevers.com
               </span>
             </a>
 
