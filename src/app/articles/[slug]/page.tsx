@@ -31,6 +31,7 @@ export async function generateMetadata({
 
   return createMetadata({
     title: article.title,
+    titleTag: article.titleTag,
     description: article.description,
     path: `/articles/${article.slug}`,
     type: "article",

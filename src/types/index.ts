@@ -6,6 +6,7 @@ export interface NavItem {
 
 export interface ArticleMeta {
   title: string;
+  titleTag?: string;
   slug: string;
   description: string;
   publishedAt: string;

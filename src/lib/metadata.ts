@@ -7,6 +7,7 @@ const SITE_DESCRIPTION =
 
 export function createMetadata({
   title,
+  titleTag,
   description,
   path = "",
   image,
@@ -14,19 +15,20 @@ export function createMetadata({
   noIndex = false,
 }: {
   title?: string;
+  titleTag?: string;
   description?: string;
   path?: string;
   image?: string;
   type?: "website" | "article";
   noIndex?: boolean;
 }): Metadata {
-  const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+  const pageTitle = titleTag ?? (title ? `${title} | ${SITE_NAME}` : SITE_NAME);
   const pageDescription = description ?? SITE_DESCRIPTION;
   const url = `${SITE_URL}${path}`;
   const ogImage = image ?? `${SITE_URL}/og-default.jpg`;
 
   return {
-    title: pageTitle,
+    title: { absolute: pageTitle },
     description: pageDescription,
     metadataBase: new URL(SITE_URL),
     alternates: {
