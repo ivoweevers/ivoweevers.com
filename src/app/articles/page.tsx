@@ -69,6 +69,11 @@ export default function ArticlesPage() {
                     >
                       {article.title}
                     </Link>
+                    {article.slug === "ryanair-app-profit-engine" && (
+                      <span className="ml-2 align-middle text-base font-normal text-accent">
+                        [update]
+                      </span>
+                    )}
                   </h2>
 
                   <p className="mt-4 lg:mt-6 text-paragraph">

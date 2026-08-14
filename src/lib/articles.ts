@@ -6,6 +6,16 @@ import type { ArticleMeta } from "@/types";
  */
 export const articles: ArticleMeta[] = [
   {
+    title: "How Ryanair Turned Its Mobile App into a Profit Engine",
+    titleTag: "How the Ryanair App Makes Money | Ivo Weevers",
+    slug: "ryanair-app-profit-engine",
+    description:
+      "This is based on a case study in the book — there\u2019s a certain irony in one of Europe\u2019s most aggressively low-cost brands becoming a masterclass in high-impact digital strategy.",
+    publishedAt: "2026-03-13",
+    author: "Ivo Weevers",
+    tags: ["mobile", "strategy", "case study"],
+  },
+  {
     title: "How a Bottle of Wine Helped Us Validate Our First App",
     slug: "how-a-bottle-of-wine-helped-us-validate-our-first-app",
     description:
@@ -44,16 +54,6 @@ export const articles: ArticleMeta[] = [
     publishedAt: "2026-03-01",
     author: "Ivo Weevers",
     tags: ["mobile", "product", "book"],
-  },
-  {
-    title: "How Ryanair Turned Its Mobile App into a Profit Engine",
-    titleTag: "How the Ryanair App Makes Money | Ivo Weevers",
-    slug: "ryanair-app-profit-engine",
-    description:
-      "This is based on a case study in the book — there\u2019s a certain irony in one of Europe\u2019s most aggressively low-cost brands becoming a masterclass in high-impact digital strategy.",
-    publishedAt: "2026-03-13",
-    author: "Ivo Weevers",
-    tags: ["mobile", "strategy", "case study"],
   },
   {
     title: "How We Increased Onboarding Conversion by 10%, by Removing One Word",
