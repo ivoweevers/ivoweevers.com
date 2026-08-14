@@ -7,8 +7,8 @@ export function RyanairAppProfitEngine() {
   return (
     <>
       <p className="text-sm italic opacity-70">
-        [Update]: Added two screenshots of notifications on my phone that
-        demonstrate their mobile strategy.
+        [Update]: Added new insights and two screenshots of notifications on my
+        phone that demonstrate their mobile strategy.
       </p>
 
       <p className="italic text-paragraph">
