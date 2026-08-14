@@ -24,19 +24,28 @@ export function RyanairAppProfitEngine() {
       </p>
 
       <p>
-        Ryanair doesn&apos;t win by adding more. It wins by stripping
-        everything back to what matters &ndash; and then using mobile to make
-        that experience work harder. The result is not just a convenient app.
-        It&apos;s a system that rewires the economics of flying.
+        There&apos;s something ironic about Europe&apos;s biggest (budget)
+        airline Ryanair having one of the smartest mobile strategies in
+        aviation.
+      </p>
+
+      <p>
+        The airline famous for stripping flying back to its essentials has made
+        its app central to how the business operates. It shifts costly processes
+        onto mobile, owns the customer relationship, and turns every journey
+        into an opportunity to sell. The result is a rare combination: lower
+        operating costs and higher revenue, driven by the same digital product.
       </p>
 
       <h2 className="text-subheader mt-8">The App as a Core Operational Engine</h2>
 
       <p>
-        Ryanair treats their app as core infrastructure. Check-in, boarding
-        passes, seat management, flight updates &ndash; everything sits in the
-        app. Not as a feature set, but as a deliberate shift away from physical
-        operations.
+        Ryanair treats its app as core infrastructure. Check-in, boarding
+        passes, seat management and flight updates all happen through the app.
+        This isn&apos;t just about making flying more convenient; rather, it
+        deliberately moves processes that once required airport staff, counters
+        or paperwork onto the customer&apos;s phone, making Ryanair&apos;s
+        operations simpler and cheaper to run.
       </p>
 
       <p>
@@ -71,28 +80,25 @@ export function RyanairAppProfitEngine() {
       </ul>
 
       <p>
-        Individually, these are small efficiencies. At Ryanair scale, they
-        compound into something far more powerful: a structurally lower
-        operational cost per passenger.
+        None of these changes saves a huge amount on its own. But across
+        hundreds of millions of passenger journeys, the savings add up. The app
+        makes self-service the default, reducing the people and physical
+        processes needed to serve each passenger. And every interaction moved
+        into the app creates another opportunity to sell a seat, bag, priority
+        boarding or another add-on. It reduces the cost to serve while creating
+        more opportunities to earn.
       </p>
 
       <h2 className="text-subheader mt-8">Turning Booking into Retail</h2>
 
       <p>
-        Once the operational layer is digitised, something interesting happens.
-        The booking and boarding pass flow becomes a shop. Seat selection, priority boarding,
-        extra baggage, car hire, hotels &ndash; none of these are new. On the
-        day of the flight, 25 mins before takeoff, you receive a notification to
-        order food and drinks in advance. But the way they are presented inside
-        the app changes everything.
+        Once these core operations move into the app, Ryanair also has many more
+        opportunities to sell. Seat selection, priority boarding, extra baggage,
+        car hire and hotels are nothing new. What Ryanair does well is offer them
+        at moments when they are most relevant. Even 25 minutes before takeoff,
+        you might get a notification inviting you to order food and drinks for
+        the flight.
       </p>
-
-      <p>They are:</p>
-      <ul className="list-disc pl-8 space-y-2">
-        <li>Contextually timed</li>
-        <li>Frictionless to purchase</li>
-        <li>Embedded in the flow</li>
-      </ul>
 
       <figure className="my-2">
         <Image
@@ -103,10 +109,16 @@ export function RyanairAppProfitEngine() {
           className="mx-auto w-full max-w-[320px] h-auto rounded-lg"
         />
         <figcaption className="mt-2 text-center text-sm italic opacity-70">
-          25 mins before takeoff, you receive a notification to order food and
-          drinks in advance.
+          Even 25 minutes before takeoff, you might get a notification inviting
+          you to order food and drinks for the flight.
         </figcaption>
       </figure>
+
+      <p>
+        The app makes these add-ons easy to discover, well timed and quick to
+        buy, because they are built directly into the journey rather than
+        presented as a separate shop.
+      </p>
 
       <p>
         And crucially, they are high-margin. Over 40% of Ryanair&apos;s
@@ -124,12 +136,8 @@ export function RyanairAppProfitEngine() {
 
       <p>
         There&apos;s another layer to this strategy that is less visible, but
-        arguably more important.
-      </p>
-
-      <p>
-        Direct bookings. Every time a customer books through the app instead of
-        a third party:
+        arguably more important: Direct bookings. Every time a customer books
+        through the app instead of a third party:
       </p>
       <ul className="list-disc pl-8 space-y-2">
         <li>Ryanair avoids commission fees</li>
@@ -148,38 +156,48 @@ export function RyanairAppProfitEngine() {
       <h2 className="text-subheader mt-8">Data as the Multiplier</h2>
 
       <p>
-        Behind the scenes, the app is learning. What users search for. What
-        they ignore. Where they hesitate. What they ultimately buy. This data
-        feeds personalisation, pricing strategies, and offer timing. The result
-        is a system that improves itself:
-      </p>
-      <ul className="list-disc pl-8 space-y-2">
-        <li>Better recommendations</li>
-        <li>Smarter upsells</li>
-        <li>Higher conversion</li>
-      </ul>
-
-      <p>All without adding visible complexity.</p>
-
-      <h2 className="text-subheader mt-8">The Real Lesson</h2>
-
-      <p>
-        Ryanair&apos;s app is not successful because it looks good. It&apos;s
-        successful because it aligns perfectly with the business model. Low-cost
-        airline &rarr; low operational cost &rarr; high ancillary revenue &rarr;
-        direct customer ownership. Ryanair uses the app as leverage:
+        Behind the scenes, the app is constantly learning: what users search
+        for, what they ignore, where they hesitate, and what they ultimately
+        buy. That data feeds personalisation, pricing strategies and the timing
+        of offers, so the system quietly improves itself with better
+        recommendations, smarter upsells and higher conversion, all without
+        adding any visible complexity.
       </p>
 
-      <p>A way to:</p>
-      <ul className="list-disc pl-8 space-y-2">
-        <li>Remove cost</li>
-        <li>Increase revenue</li>
-        <li>Strengthen the relationship with the customer</li>
-      </ul>
+      <h2 className="text-subheader mt-8">The Lesson</h2>
 
       <p>
-        All at the same time and when that happens, something powerful emerges.
-        The product stops being an interface and becomes the business.
+        Ryanair&apos;s mobile strategy works because it starts with a different
+        way of thinking about the role of the app.
+      </p>
+
+      <p>
+        The app is not simply a digital companion to the airline. It is part of
+        how Ryanair runs the airline. It moves operational work to the
+        passenger, reduces the cost of serving them, keeps Ryanair in direct
+        contact throughout the journey, and creates more opportunities to sell.
+        The same product makes the business both more efficient and more
+        profitable.
+      </p>
+
+      <p>
+        That is the <em>Mobile Mindset</em> in practice: don&apos;t start with
+        the question of what your app should do. Start with what mobile can
+        fundamentally change about how your business works.
+      </p>
+
+      <p>
+        There is also a personal reason I pay close attention to Ryanair. I
+        spend part of my life in Cagliari, the capital of the beautiful
+        Mediterranean island of Sardinia. Ryanair has, in many ways, unlocked
+        the island for its residents including myself. Its network allows me to
+        live and work between Cagliari, London and Amsterdam with remarkable
+        ease.
+      </p>
+
+      <p>
+        So I use the Ryanair app a lot. And the more I use it, the more I
+        appreciate the thinking behind it.
       </p>
     </>
   );
