@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { FollowOnLinkedIn } from "@/components/articles/FollowOnLinkedIn";
@@ -5,6 +6,11 @@ import { FollowOnLinkedIn } from "@/components/articles/FollowOnLinkedIn";
 export function RyanairAppProfitEngine() {
   return (
     <>
+      <p className="text-sm italic opacity-70">
+        [Update]: Added two screenshots of notifications on my phone that
+        demonstrate their mobile strategy.
+      </p>
+
       <p className="italic text-paragraph">
         (
         This article is based on a case study from my book{" "}
@@ -42,6 +48,20 @@ export function RyanairAppProfitEngine() {
         journey. Ryanair owns this channel.
       </p>
 
+      <figure className="my-2">
+        <Image
+          src="/images/ryanair-notification-1.png"
+          alt="Ryanair push notification: all passengers need the Ryanair app to access their digital boarding pass"
+          width={1024}
+          height={290}
+          className="w-full h-auto rounded-lg"
+        />
+        <figcaption className="mt-2 text-center text-sm italic opacity-70">
+          A week before the flight, Ryanair sends the notification to use their
+          app.
+        </figcaption>
+      </figure>
+
       <p>Every digital boarding pass means:</p>
       <ul className="list-disc pl-8 space-y-2">
         <li>One less printed document</li>
@@ -61,8 +81,10 @@ export function RyanairAppProfitEngine() {
       <p>
         Once the operational layer is digitised, something interesting happens.
         The booking and boarding pass flow becomes a shop. Seat selection, priority boarding,
-        extra baggage, car hire, hotels &ndash; none of these are new. But the
-        way they are presented inside the app changes everything.
+        extra baggage, car hire, hotels &ndash; none of these are new. On the
+        day of the flight, 25 mins before takeoff, you receive a notification to
+        order food and drinks in advance. But the way they are presented inside
+        the app changes everything.
       </p>
 
       <p>They are:</p>
@@ -71,6 +93,20 @@ export function RyanairAppProfitEngine() {
         <li>Frictionless to purchase</li>
         <li>Embedded in the flow</li>
       </ul>
+
+      <figure className="my-2">
+        <Image
+          src="/images/ryanair-notification-2.png"
+          alt="Ryanair lock screen notification: order to seat now, order food and drink before takeoff"
+          width={665}
+          height={1024}
+          className="mx-auto w-full max-w-[320px] h-auto rounded-lg"
+        />
+        <figcaption className="mt-2 text-center text-sm italic opacity-70">
+          25 mins before takeoff, you receive a notification to order food and
+          drinks in advance.
+        </figcaption>
+      </figure>
 
       <p>
         And crucially, they are high-margin. Over 40% of Ryanair&apos;s
@@ -109,7 +145,7 @@ export function RyanairAppProfitEngine() {
         and cheaper to run.
       </p>
 
-      <h2 className="text-subheader mt-8">Data as a Silent Multiplier</h2>
+      <h2 className="text-subheader mt-8">Data as the Multiplier</h2>
 
       <p>
         Behind the scenes, the app is learning. What users search for. What
