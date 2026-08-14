@@ -10,7 +10,7 @@ export const articles: ArticleMeta[] = [
     titleTag: "How the Ryanair App Makes Money | Ivo Weevers",
     slug: "ryanair-app-profit-engine",
     description:
-      "This is based on a case study in the book — there\u2019s a certain irony in one of Europe\u2019s most aggressively low-cost brands becoming a masterclass in high-impact digital strategy.",
+      "There\u2019s a certain irony in one of Europe\u2019s most aggressively low-cost brands becoming a masterclass in high-impact digital strategy.",
     publishedAt: "2026-03-13",
     author: "Ivo Weevers",
     tags: ["mobile", "strategy", "case study"],
@@ -21,7 +21,7 @@ export const articles: ArticleMeta[] = [
     titleTag: "How Spotify Works Offline (And Why It Matters) | Ivo Weevers",
     slug: "why-spotify-never-lets-the-music-stop",
     description:
-      "Driving through Sardinia with a patchy signal, the music never stopped \u2014 by design. How Spotify quietly handles the Tunnel Moment to protect habits, subscriptions, and artist payouts all at once.",
+      "Driving through the Italian island of Sardinia with a patchy signal, the music never stopped, by design. How Spotify handles the Tunnel Moment to protect habits, subscriptions, and artist payouts all at once.",
     publishedAt: "2026-06-01",
     author: "Ivo Weevers",
     tags: ["mobile", "product", "case study"],
@@ -31,7 +31,7 @@ export const articles: ArticleMeta[] = [
     titleTag: "Why I Wrote 'Pocket Winners' - A Book on Building Winning Apps",
     slug: "why-i-wrote-pocket-winners",
     description:
-      "Every now and then, you find yourself in a team where you just *know*. When that happens, something shifts. A successful product is no longer something you chase — it becomes the almost inevitable outcome.",
+      "Every now and then, you find yourself in a team where you just *know*. A successful product is no longer something you chase; it becomes the almost inevitable outcome.",
     publishedAt: "2026-03-01",
     author: "Ivo Weevers",
     tags: ["mobile", "product", "book"],
@@ -40,7 +40,7 @@ export const articles: ArticleMeta[] = [
     title: "How a Bottle of Wine Helped Us Validate Our First App",
     slug: "how-a-bottle-of-wine-helped-us-validate-our-first-app",
     description:
-      "How do you get early customer feedback on a new app when you don't have customers yet? We used a bottle of wine \u2014 and the conversations it sparked uncovered issues no data dashboard would have shown us.",
+      "How do you get early customer feedback on a new app when you don't have customers yet? We used a bottle of wine. The conversations it sparked uncovered issues no data dashboard would have shown us.",
     publishedAt: "2026-06-27",
     author: "Ivo Weevers",
     tags: ["mobile", "product", "research"],
@@ -60,7 +60,7 @@ export const articles: ArticleMeta[] = [
     titleTag: "We Raised Onboarding Conversion 10% by Cutting One Word",
     slug: "boosting-conversion-by-removing-one-word",
     description:
-      "This is based on a case study in the book \u2014 On mobile, every word carries weight. Not just because screen space is limited, but because each word competes for the user\u2019s attention\u2014and, more importantly, their interpretation.",
+      "On mobile, every word carries weight. Not just because screen space is limited, but because each word competes for the user\u2019s attention and, more importantly, their interpretation.",
     publishedAt: "2026-03-13",
     author: "Ivo Weevers",
     tags: ["mobile", "conversion", "case study"],
