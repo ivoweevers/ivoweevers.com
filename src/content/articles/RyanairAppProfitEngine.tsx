@@ -11,7 +11,7 @@ export function RyanairAppProfitEngine() {
         phone that demonstrate their mobile strategy.
       </p>
 
-      <p className="italic text-paragraph">
+      <p className="text-sm italic opacity-70">
         (
         This article is based on a case study from my book{" "}
         <Link
