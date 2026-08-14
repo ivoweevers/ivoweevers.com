@@ -16,25 +16,6 @@ export const articles: ArticleMeta[] = [
     tags: ["mobile", "strategy", "case study"],
   },
   {
-    title: "How a Bottle of Wine Helped Us Validate Our First App",
-    slug: "how-a-bottle-of-wine-helped-us-validate-our-first-app",
-    description:
-      "How do you get early customer feedback on a new app when you don't have customers yet? We used a bottle of wine \u2014 and the conversations it sparked uncovered issues no data dashboard would have shown us.",
-    publishedAt: "2026-06-27",
-    author: "Ivo Weevers",
-    tags: ["mobile", "product", "research"],
-  },
-  {
-    title: "Taste What You Cook - Why Product Teams Must Use Their Own Product",
-    titleTag: "Dogfooding Done Right: Use Your Product in the Real World",
-    slug: "taste-what-you-cook",
-    description:
-      "The best mobile opportunities are often discovered away from your desk. The gap between how apps are built and how they're actually used is usually where the strongest strategic opportunities appear.",
-    publishedAt: "2026-06-16",
-    author: "Ivo Weevers",
-    tags: ["mobile", "strategy", "product"],
-  },
-  {
     title:
       "Why the Spotify Mobile App Never Lets the Music Stop - Offline Caching as Retention Strategy",
     titleTag: "How Spotify Works Offline (And Why It Matters) | Ivo Weevers",
@@ -54,6 +35,25 @@ export const articles: ArticleMeta[] = [
     publishedAt: "2026-03-01",
     author: "Ivo Weevers",
     tags: ["mobile", "product", "book"],
+  },
+  {
+    title: "How a Bottle of Wine Helped Us Validate Our First App",
+    slug: "how-a-bottle-of-wine-helped-us-validate-our-first-app",
+    description:
+      "How do you get early customer feedback on a new app when you don't have customers yet? We used a bottle of wine \u2014 and the conversations it sparked uncovered issues no data dashboard would have shown us.",
+    publishedAt: "2026-06-27",
+    author: "Ivo Weevers",
+    tags: ["mobile", "product", "research"],
+  },
+  {
+    title: "Taste What You Cook - Why Product Teams Must Use Their Own Product",
+    titleTag: "Dogfooding Done Right: Use Your Product in the Real World",
+    slug: "taste-what-you-cook",
+    description:
+      "The best mobile opportunities are often discovered away from your desk. The gap between how apps are built and how they're actually used is usually where the strongest strategic opportunities appear.",
+    publishedAt: "2026-06-16",
+    author: "Ivo Weevers",
+    tags: ["mobile", "strategy", "product"],
   },
   {
     title: "How We Increased Onboarding Conversion by 10%, by Removing One Word",
