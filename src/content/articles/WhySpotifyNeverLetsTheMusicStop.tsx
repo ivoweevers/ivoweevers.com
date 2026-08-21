@@ -56,7 +56,7 @@ export function WhySpotifyNeverLetsTheMusicStop() {
           <strong>It protects the habit.</strong> Listening is a daily ritual,
           and rituals are fragile. Every interruption is a small crack in it.
           Keep sessions unbroken and the habit stays intact, which is what
-          keeps the subscription quietly renewing month after month.
+          keeps the subscription renewing month after month.
         </li>
         <li>
           <strong>

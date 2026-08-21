@@ -52,7 +52,10 @@ export default function MyStoryPage() {
               </p>
 
               <div className="mt-4 lg:mt-6 text-paragraph space-y-4">
-                <p>Hey &ndash; pleased to meet.</p>
+                <p>
+                  Building apps has never been easier. Yet so few succeed.
+                  I&apos;ve spent 20 years on the small list that did.
+                </p>
 
                 <p>
                   I build and invest in tech products, specialising in mobile,

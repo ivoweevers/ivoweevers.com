@@ -143,7 +143,6 @@ export function RyanairAppProfitEngine() {
         <li>Ryanair avoids commission fees</li>
         <li>Retains full control over pricing</li>
         <li>Owns the customer relationship</li>
-        <li>Captures the data</li>
       </ul>
 
       <p>
@@ -159,7 +158,7 @@ export function RyanairAppProfitEngine() {
         Behind the scenes, the app is constantly learning: what users search
         for, what they ignore, where they hesitate, and what they ultimately
         buy. That data feeds personalisation, pricing strategies and the timing
-        of offers, so the system quietly improves itself with better
+        of offers, so the system improves itself with better
         recommendations, smarter upsells and higher conversion, all without
         adding any visible complexity.
       </p>
@@ -181,10 +180,11 @@ export function RyanairAppProfitEngine() {
       </p>
 
       <p>
-        That is the <em>Mobile Mindset</em> in practice: don&apos;t start with
-        the question of what your app should do. Start with what mobile can
-        fundamentally change about how your business works.
+        That is the <em>Mobile Mindset</em> in practice: start with what mobile
+        can fundamentally change about how your business works.
       </p>
+
+      <h2 className="text-subheader mt-8">Closer to Home</h2>
 
       <p>
         There is also a personal reason I pay close attention to Ryanair. I
@@ -196,8 +196,8 @@ export function RyanairAppProfitEngine() {
       </p>
 
       <p>
-        So I use the Ryanair app a lot. And the more I use it, the more I
-        appreciate the thinking behind it.
+        So I use the Ryanair app a lot. And the more I use it during my
+        travels, the more I appreciate the thinking behind it.
       </p>
     </>
   );

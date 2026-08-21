@@ -32,8 +32,13 @@ export function Footer() {
                 className="shrink-0"
                 aria-hidden="true"
               />
-              <span className="text-accent font-bold underline underline-offset-2 group-hover:text-accent-hover">
-                Follow me on Linkedin
+              <span className="flex flex-col">
+                <span className="text-accent font-bold underline underline-offset-2 group-hover:text-accent-hover">
+                  Follow me on LinkedIn
+                </span>
+                <span className="text-sm font-light text-white/70">
+                  For sharper thinking on what makes products succeed
+                </span>
               </span>
             </a>
 
