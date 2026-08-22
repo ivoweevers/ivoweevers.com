@@ -12,14 +12,13 @@ export function WorkWithMeSection() {
           <SectionHeading>Work with me</SectionHeading>
 
           <p className="mt-6 lg:mt-8 text-subheader">
-            As an early-stage investor and product leader, I love helping
-            companies and founders with their product plans.
+            As an early-stage investor and product leader, I help companies and
+            founders with their product plans.
           </p>
 
           <div className="mt-6 lg:mt-8 text-paragraph space-y-4">
             <p>
-              I invest in early-stage tech companies as a partner of
-              Amsterdam-based fund{" "}
+              As a partner of Amsterdam-based fund{" "}
               <a
                 href="https://greatstuffventures.com/"
                 target="_blank"
@@ -27,10 +26,10 @@ export function WorkWithMeSection() {
                 className="link-accent"
               >
                 Great Stuff Ventures
-              </a>{" "}
-              and we have done so far in over 40 early-stage companies,
-              across exciting sectors including fintech, medtech, and the latest
-              AI-startups.
+              </a>
+              , I invest in early-stage tech companies and we have done so far
+              in over 40 early-stage companies, across exciting sectors
+              including fintech, medtech, energy, and the latest AI-startups.
             </p>
             <p>
               I have helped enterprises, startups and founders with making their
